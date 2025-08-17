@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+    --font-plus : Plus Jakarta Sans, sans-serif;
+    --color-primary : #EA1900;
+    --color-secondary : #FF6B1A;
+    --shadow-gradient-button :inset 0 4px 8px 0 rgba(255, 255, 255, 0.80), 0 8px 32px 0 rgba(237, 38, 4, 0.32);
+    --shadow-button :inset 0 4px 8px 0 rgba(234, 25, 0, 0.16), 0 8px 32px 0 rgba(162, 110, 129, 0.15);
+    --shadow-header : 0 4px 32px 0 rgba(156, 174, 186, 0.18);
+    --shadow-card : 0 16px 40px 0 rgba(1, 0, 54, 0.08)
+   }
+
+@layer base{
+    body{@apply font-plus scroll-smooth overflow-x-hidden}
+    button{@apply cursor-pointer}
+    .sticky-header { @apply backdrop-blur-[100px] shadow-header bg-white/90 }
+    .gradient-text { @apply bg-linear-to-r text-transparent bg-clip-text from-secondary to-primary}
+    .primary-button { @apply h-12 px-8 bg-gradient-to-b from-secondary to-primary rounded-full text-white text-base font-bold shadow-gradient-button active:shadow-none transition-all duration-300}
+    .button { @apply h-12 px-8 hover:bg-gradient-to-b hover:from-secondary hover:to-primary border hover:border-none border-secondary rounded-full text-secondary hover:text-white text-base font-bold shadow-button hover:shadow-gradient-button transition-all duration-300}
+
+    #card-1 { @apply basis-[320px] grow xl:grow-0} 
+    #card-2 { @apply basis-[486px] grow xl:grow-0}   
+    #card-3 { @apply basis-[272px] grow xl:grow-0}  
+    #card-4 { @apply basis-[366px] grow xl:grow-0}   
+    #card-5 { @apply basis-[402px] grow xl:grow-0}
+    #card-6 { @apply basis-[310px] grow xl:grow-0}
+    #card-7 { @apply basis-[250px] grow xl:grow-0}
+    #card-8 { @apply basis-[332px] grow xl:grow-0}
+    #card-9 { @apply basis-[496px] grow xl:grow-0}
+
+    .vector-bg-1{@apply bg-linear-180 from-[#C1B9FF] to-[#6A57FF] shadow-[0px_8px_8px_rgba(117,99,255,0.25)]}
+    .vector-bg-2{@apply bg-linear-180 from-[#FFB1D2] to-[#EE2277] shadow-[0px_8px_8px_rgba(215,34,142,0.25)]}
+    .vector-bg-3{@apply bg-linear-180 from-[#FFC4AD] to-[#F86226] shadow-[0px_8px_8px_rgba(248,98,38,0.25)]}
+    .vector-bg-4{@apply bg-linear-180 from-[#DEAFFF] to-[#A62FFC] shadow-[0px_8px_8px_rgba(117,99,255,0.25)]}
+    .vector-bg-5{@apply bg-linear-180 from-[#A0D3FD] to-[#1889E4] shadow-[0px_8px_8px_rgba(24,137,228,0.25)]}
+    .vector-bg-6{@apply bg-linear-180 from-[#99E377] to-[#40A214] shadow-[0px_8px_8px_rgba(64,162,20,0.25)]}
+    .vector-bg-7{@apply bg-linear-180 from-[#A1ABF2] to-[#3F55E8] shadow-[0px_8px_8px_rgba(63,85,232,0.25)]}
+    .vector-bg-8{@apply bg-linear-180 from-[#FFC79D] to-[#F4781D] shadow-[0px_8px_8px_rgba(244,120,29,0.25)]}
+    .vector-bg-9{@apply bg-linear-180 from-[#F3A4D3] to-[#D7228E] shadow-[0px_8px_8px_rgba(215,34,142,0.25)]}
+}
+@layer utilities{
+    .container{@apply max-w-[1158px] w-full mx-auto px-4}
+}
