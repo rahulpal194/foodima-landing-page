@@ -7,16 +7,29 @@
     --shadow-gradient-button :inset 0 4px 8px 0 rgba(255, 255, 255, 0.80), 0 8px 32px 0 rgba(237, 38, 4, 0.32);
     --shadow-button :inset 0 4px 8px 0 rgba(234, 25, 0, 0.16), 0 8px 32px 0 rgba(162, 110, 129, 0.15);
     --shadow-header : 0 4px 32px 0 rgba(156, 174, 186, 0.18);
-    --shadow-card : 0 16px 40px 0 rgba(1, 0, 54, 0.08)
+    --shadow-card : 0 16px 40px 0 rgba(1, 0, 54, 0.08);
+    --shadow-connect : 0 16px 60px 0 rgba(255, 148, 135, 0.08);
+    --drop-shadow-foodbank :2.571px 4.286px 12.857px rgba(230, 59, 95, 0.40);
+    --drop-shadow-foodscan :2.143px 2.143px 8.572px rgba(50, 121, 255, 0.40); 
+    --drop-shadow-foodappi :2.143px 2.143px 8.571px rgba(0, 138, 127, 0.40); 
+    --drop-shadow-shopking :2.143px 2.143px 8.571px rgba(245, 81, 20, 0.40); 
+    --drop-shadow-shopperzz :2.143px 2.143px 8.571px rgba(255, 101, 1, 0.40); 
+    --drop-shadow-storeking :2.4px 2.4px 9.001px rgba(0, 199, 30, 0.25); 
    }
 
 @layer base{
-    body{@apply font-plus scroll-smooth overflow-x-hidden}
-    button{@apply cursor-pointer}
+     html{@apply scroll-smooth sm:overflow-x-auto overflow-x-hidden}
+     body{@apply font-plus text-[#323D4E] scroll-smooth sm:overflow-x-visible overflow-x-hidden}
+     button{@apply cursor-pointer}
     .sticky-header { @apply backdrop-blur-[100px] shadow-header bg-white/90 }
     .gradient-text { @apply bg-linear-to-r text-transparent bg-clip-text from-secondary to-primary}
-    .primary-button { @apply h-12 px-8 bg-gradient-to-b from-secondary to-primary rounded-full text-white text-base font-bold shadow-gradient-button active:shadow-none transition-all duration-300}
-    .button { @apply h-12 px-8 hover:bg-gradient-to-b hover:from-secondary hover:to-primary border hover:border-none border-secondary rounded-full text-secondary hover:text-white text-base font-bold shadow-button hover:shadow-gradient-button transition-all duration-300}
+    .primary-button { @apply h-13 px-8 bg-gradient-to-b from-secondary to-primary rounded-full text-white text-base font-bold shadow-gradient-button active:shadow-none transition-all duration-300}
+    .button { @apply h-13 px-8 hover:bg-gradient-to-b hover:from-secondary hover:to-primary border hover:border-none border-secondary rounded-full text-secondary hover:text-white text-base font-bold shadow-button hover:shadow-gradient-button transition-all duration-300}
+
+    .modal { @apply bg-black/60 backdrop-blur-sm w-full h-screen inset-0 fixed flex justify-center items-center z-30 opacity-0 invisible transition-all duration-300}
+    .modal.active {@apply opacity-100 visible}
+    .modal-content{@apply bg-white max-w-[560px] w-full p-6 rounded-2xl max-h-[calc(100%-50px)] h-[500px] scale-y-0 -translate-y-full transition-all duration-500}
+    .modal.active .modal-content { @apply scale-y-100 translate-y-0}
 
     #card-1 { @apply basis-[320px] grow xl:grow-0} 
     #card-2 { @apply basis-[486px] grow xl:grow-0}   
@@ -40,4 +53,7 @@
 }
 @layer utilities{
     .container{@apply max-w-[1158px] w-full mx-auto px-4}
+    .bg-custom-gradient {
+          background: linear-gradient(95deg, #FFF5F4 0%, #FFF6EF 36.81%, #F4FBFF 72.5%, #FFF7EF 100%);
+      }
 }
