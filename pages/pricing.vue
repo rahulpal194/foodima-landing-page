@@ -1,15 +1,13 @@
-
 <template>
-
      <!--===============================
            HERO PART START 
      =================================-->
-     <section class="h-auto w-full pt-26 lg:pt-40 relative">
+     <section class="pt-26 lg:pt-40 mb-12 relative">
         <div class="container">
-            <div class="text-sm sm:text-base font-medium text-primary px-4 py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3">FoodKing Demo</div>
-            <div class="max-w-[742px] w-full mx-auto">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Turn Your <span class="gradient-text">Multi-Restaurant Business Vision Into Reality</span> with Foodimaa</h1>
-                <p class="text-base lg:text-lg font-normal text-center lg:px-24 mb-8 sm:mb-6">Take a tour! Try our Foodimaa demo and see how it can boost your multi-restaurant food ordering business.</p>
+            <div class="text-sm sm:text-base font-medium text-primary px-4 py-3 sm:py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3 sm:mb-5">Foodking Demo</div>
+            <div class="max-w-[790px] w-full mx-auto">
+                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">No Monthly Bills—Just a<span class="gradient-text"> One-Time Purchase </span>and Full Access</h1>
+                <p class="text-base lg:text-lg font-normal text-center lg:px-24">Choose the perfect plan for your multi-branch restaurant business and get started instantly!</p>
             </div>
         </div>
      </section>
@@ -17,74 +15,124 @@
            HERO PART END 
      =================================-->
 
-    <!--===============================
-        RESTAURANT ECOSYSTEM PART START 
+    <!--==============================
+          PRICING PLAN PART START
      =================================-->
-     <section class="mb-20 sm:mb-40">
+     <section class="mb-20 sm:mb-40" id="pricing-plan">
         <div class="container">
-            <div class="w-full px-6 py-4 rounded-2xl border border-[#FFF4BC] bg-[#FFFEF4] mb-8">
-                <h6 class="text-[15px] font-semibold mb-3.5 flex items-center gap-2">
-                    <i class="icon-fill-danger text-[#FFCC40] text-2xl"></i>
-                    Important Note for Demo:
-                </h6>
-                 <p class="text-[15px] font-normal">The system refreshes every 1 hour and your all demo data will be removed. So, you may need to clear your cookies and login again using demo credentials.</p>
+            <div class="bg-white rounded-full shadow-pricing-title w-fit mx-auto mb-12 p-2 flex gap-6 items-center h-[60px]">
+                 <button @click="pricingPlan = 'regular'" type="button" :class="pricingPlan == 'regular' ? 'primary-button h-11 px-6' : 'text-black ps-8'" class="w-full rounded-full leading-tight text-base font-bold capitalize transition-none">Regular</button>
+                 <button @click="pricingPlan = 'extended'" type="button" :class="pricingPlan == 'extended' ? 'primary-button h-11 px-6' : 'text-black pr-8'" class="w-full rounded-full leading-tight text-base font-bold capitalize transition-none">Extended</button>
             </div>
-            <div class="flex flex-wrap gap-6">
-                <div v-for="feature in features.slice(0,6)" :id="`card-${feature.id}`" class="group bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
-                    <div class="flex items-start justify-between">
-                        <div :class="`vector-bg-${feature.id}`" class="w-9 h-9 rounded-full mb-6 flex items-center justify-center">
-                            <i :class="feature.vector" class="text-xl text-white"></i>
-                        </div>
-                        <div v-if="feature.addon" class="absolute right-0 shadow-badge">
-                            <div class="relative overflow-y-clip bg-linear-270 from-secondary to-primary">
-                                <div class="w-6 h-6 rotate-45 bg-primary absolute -left-3 "></div>
-                                <div class="p-1 h-6 text-sm font-semibold text-white flex items-center relative z-10">Add-On</div>
-                            </div>
-                        </div>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div v-for="plan in plans" :class="[plan.most_popular ? 'active' : '']" class="pricePlan group p-6 rounded-3xl">
+                    <div class="flex justify-between mb-4">
+                        <div class="w-9 h-9 rounded-full bg-[#FFEBE9] flex items-center justify-center"><i :class="plan.icon" class="text-primary"></i></div>
+                        <span v-if="plan.most_popular" class="text-xs font-semibold bg-[#007EDD] h-fit px-2 py-1.5 rounded-full text-white">Most Popular</span>
                     </div>
-                    <h6 class="text-2xl font-bold mb-3">{{feature.name}}</h6>
-                    <p class="text-base font-normal mb-6">{{feature.desc}}</p>
-                    <button class="button group-hover:border-none group-hover:bg-gradient-to-b group-hover:from-secondary group-hover:to-primary group-hover:text-white group-hover:shadow-gradient-button">Explore Demo</button>
+                    <h2 class="text-primary font-bold text-2xl mb-3">{{ plan.title }}</h2>
+                    <p class="text-base font-semibold mb-6">{{ plan.subtitle }}</p>
+                    <h6 v-if="pricingPlan=='regular'" class="text-[42px] font-bold leading-tight mb-8"><span>$</span>{{ plan.regular_price }}</h6>
+                    <h6 v-if="pricingPlan=='extended'" class="text-[42px] font-bold leading-tight mb-8"><span>$</span>{{ plan.extended_price }}</h6>
+                    <button class="mb-8 w-full button !transition-none group-hover:text-white group-hover:!shadow-gradient-button group-hover:bg-gradient-to-b from-secondary to-primary">Buy Now</button>
+                    <ul class="flex flex-col gap-5">
+                        <li v-for="feature in plan.features"
+                         class="flex items-start gap-3"> 
+                         <i :class="feature.type? 'icon-line-check text-[#31C970]':'icon-line-minus text-[#818B9B]'" class="text-2xl"></i>
+                         <span :class="feature.type? '':'text-[#818B9B]'" class="text-lg font-medium leading-tight">{{ feature.name }}</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
      </section>
-     <!--===============================
-        RESTAURANT ECOSYSTEM PART END 
+     <!--==============================
+            PRICING PLAN PART END
      =================================-->
-     
-    <!--===============================
-            ADDON DEMO PART START 
+
+     <!--===============================
+        LICENSE COMPARISON PART START
      =================================-->
      <section class="mb-20 sm:mb-40">
         <div class="container">
-            <div class="text-sm sm:text-base font-medium text-primary px-4 py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3">Addons Demo</div>
-            <div class="max-w-[934px] w-full mx-auto mb-12 sm:mb-16">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Turn Up the Flavor<span class="gradient-text"> with Addons!</span></h1>
-                 <p class="text-base lg:text-lg font-normal text-center lg:px-24">Discover addons that bring flexibility, automation, and convenience — all in one seamless experience.</p>
+            <div class="text-sm sm:text-base font-medium text-primary px-4 py-3 sm:py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3 sm:mb-5">Difference Between Regular & Extended</div>
+            <div class="max-w-[790px] w-full mx-auto mb-12">
+                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Look at the<span class="gradient-text"> License Comparison </span></h1>
+                <p class="text-base lg:text-lg font-normal text-center lg:px-24">Get the right license for your goals and deliver a stronger, more valuable experience to your customers.</p>
             </div>
-            <div class="flex flex-wrap gap-6">
-                <div v-for="feature in features.slice(7,9)" :id="`card-${feature.id}`" class="group bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
-                    <div class="flex items-start justify-between">
-                        <div :class="`vector-bg-${feature.id}`" class="w-9 h-9 rounded-full mb-6 flex items-center justify-center">
-                            <i :class="feature.vector" class="text-xl text-white"></i>
-                        </div>
-                        <div v-if="feature.addon" class="absolute right-0 shadow-badge">
-                            <div class="relative overflow-y-clip bg-linear-270 from-secondary to-primary">
-                                <div class="w-6 h-6 rotate-45 bg-primary absolute -left-3 "></div>
-                                <div class="p-1 h-6 text-sm font-semibold text-white flex items-center relative z-10">Add-On</div>
-                            </div>
-                        </div>
-                    </div>
-                    <h6 class="text-2xl font-bold mb-3">{{feature.name}}</h6>
-                    <p class="text-base font-normal mb-6">{{feature.desc}}</p>
-                    <button class="w-fit py-3.5 px-6 text-base border border-primary rounded-full leading-4.5 font-bold gradient-text shadow-button">Comming Soon...</button>
-                </div>
+            <div class="relative">
+                <div class="bg-white shadow-[0px_6px_12px_0px_rgba(156,174,186,0.10)] rounded-3xl overflow-x-auto overflow-y-hidden">
+                    <span class="absolute -z-10 top-32 left-1/2 -translate-x-1/2 w-[580px] h-[75px] rotate-[35deg] blur-[300px] bg-[#FFA087]"></span>
+                <table class="w-full">
+                    <thead class="border-b last:border-none border-[#E7EAEF]">
+                        <tr class="[&_th]:first:text-left align-bottom ">
+                            <th class="p-6">
+                                <h2 class="text-[32px] font-bold">License <br> Features <span class="text-lg font-medium">(As per Envato policy)</span></h2>
+                            </th>
+                            <th class="p-6">
+                                <h2 class="text-2xl font-bold text-nowrap">Regular License</h2>
+                                <NuxtLink to="#pricing-plan" @click="pricingPlan = 'regular'" class="mt-4 flex items-center justify-center w-fit mx-auto button h-11 px-6">Buy Now</NuxtLink>
+                            </th>
+                            <th class="p-6">
+                                <h2 class="text-2xl font-bold text-nowrap">Extended License</h2>
+                                <NuxtLink to="#pricing-plan" @click="pricingPlan = 'extended'" class="mt-4 flex items-center w-fit mx-auto button h-11 px-6">Buy Now</NuxtLink>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="feature in licenseFeature" class="border-b last:border-none border-[#E7EAEF] [&_td]:text-lg font-medium [&_tD]:first:text-left text-center">
+                            <td class="p-6">{{ feature.name }}</td>
+                            <td class="p-6"><i class="text-2xl" :class="feature.regular? 'icon-check-circle text-[#31C970]': 'icon-close-circle text-[#F55858]'"></i></td>
+                            <td class="p-6"><i class="text-2xl" :class="feature.extended? 'icon-check-circle text-[#31C970]': 'icon-close-circle text-[#F55858]'"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             </div>
         </div>
      </section>
      <!--===============================
-             ADDON DEMO PART END 
+        LICENSE COMPARISON PART END
+     =================================-->
+
+     <!--===============================
+           ADDON PRICING PART START
+     =================================-->
+     <section>
+        <div class="pt-20 pb-20 sm:pb-40 md:px-20 bg-[url('/images/six-steps-bg.png')] bg-contain md:bg-cover bg-no-repeat bg-top">
+            <div class="container">
+                <div class="text-sm sm:text-base font-medium text-primary px-4 py-3 sm:py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3 sm:mb-5">Addon Pricing</div>
+                <div class="max-w-[460px] md:max-w-[542px] lg:max-w-[732px] w-full mx-auto flex flex-col items-center justify-center px-6 lg:px-0 mb-12">
+                    <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Supercharge with Premium<span class="gradient-text"> Foodima Addons </span>– See the Prices</h1>
+                    <p class="text-base lg:text-lg font-normal text-center lg:px-10">Explore advanced features designed to boost performance and tailor your system to your needs.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div v-for="plan in addonplans" class="p-6 rounded-2xl shadow-stepcard bg-linear-180 from-[#FFFAFC] to-[#FFFF]">
+                        <div class="mb-4">
+                            <NuxtImg class="w-12 drop-shadow-[0px_8px_16px_rgba(221,49,144,0.25)] mb-6" :src="plan.logo"/>
+                            <h6 class="text-2xl font-bold mb-4">{{ plan.name }}</h6>
+                            <p class="text-base font-normal">{{ plan.subtitle }}</p>
+                        </div>
+                        <div class="border-b last:border-none border-[#E5EDF3] flex justify-between items-center pt-6 pb-6">
+                            <div>
+                                <p>Regular License</p>
+                                <h6 class="text-[28px] font-semibold text-primary">${{ plan.regular_price }}</h6>
+                            </div>
+                            <button class="button h-11 px-6">Buy Now</button>
+                        </div>
+                        <div class="border-b last:border-none border-[#E5EDF3] flex justify-between items-center pt-6 last:pb-0">
+                            <div>
+                                <p>Extended License</p>
+                                <h6 class="text-[28px] font-semibold text-primary">${{ plan.extended_price }}</h6>
+                            </div>
+                            <button class="button h-11 px-6">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> 
+     <!--===============================
+           ADDON PRICING PART END
      =================================-->
 
     <!--===============================
@@ -104,7 +152,7 @@
                 </svg>
                 <div class="relative">
                     <div class="flex flex-col justify-center items-center max-w-[934px] w-full mx-auto">
-                        <h2 class="text-3xl md:text-[42px] leading-tight text-center font-bold mb-6">Start Your Journey with FoodKing & Build a
+                        <h2 class="text-3xl md:text-[42px] leading-tight text-center font-bold mb-6">Start Your Journey with Foodima & Build a
                             <span class="gradient-text">Multi-Restaurant Food Business</span>
                             Today!
                             </h2>
@@ -121,8 +169,21 @@
      <!--===============================
               ACTION PART END 
      =================================-->
-     
 </template>
 <script setup>
-    import features from '@/assets/json/ecosystem.json'
+import plans from '@/assets/json/pricing-plan.json';
+import addonplans from '@/assets/json/addon-plan.json'
+ const pricingPlan=ref('regular')
+ const licenseFeature = ref([
+    {id:1, name:"Lifetime License Validity", regular: true, extended:true},
+    {id:2, name:"Permitted for 1 Domain", regular: true, extended:true},
+    {id:3, name:"6 months of general and technical support", regular: true, extended:true},
+    {id:4, name:"All Premium Features", regular: true, extended:true},
+    {id:4, name:"Lifetime FREE Update", regular: true, extended:true},
+    {id:1, name:"For Personal Project", regular: true, extended:true},
+    {id:2, name:"For Commercial Projects [if end product is paid]", regular: false, extended:true},
+    {id:3, name:"Postman Collection for REST API Documentation", regular: false, extended:true},
+    {id:4, name:"Admin Panel FREE Installation in cPanel [One Time]", regular: false, extended:true},
+    {id:4, name:"Priority Support", regular: false, extended:true},
+ ])
 </script>

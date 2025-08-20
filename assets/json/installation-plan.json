@@ -1,0 +1,63 @@
+[
+    {
+        "id":1,
+        "icon":"icon-fill-flash",
+        "name":"Starter",
+        "subtitle":"Begin with a small but powerful step.",
+        "price":199,
+        "old_price":299,
+        "features":[
+            {"name":"Setup Admin, Restaurant owner, and Delivery man panel on your hosting.", "enable": true},
+            {"name":"Configure User PWA website on your hosting.", "enable": true},
+            {"name":"Customize Business name, logo, Package Name, etc.", "enable": true},
+            {"name":"Setup SMTP Mail configuration.", "enable": true},
+            {"name":"Setup OTP configuration.", "enable": true},
+            {"name":"Setup Payment & SMS gateways.", "enable": false},
+            {"name":"Setup third party API.", "enable": false},
+            {"name":"Configure Push notification.", "enable": false},
+            {"name":"Translate full application to your local language.", "enable": false},
+            {"name":"One revision before project handover.", "enable": false}
+        ]
+    },
+    {
+        "id":2,
+        "icon":"icon-fill-medal",
+        "name":"Standard",
+        "subtitle":"Advance your business with confidence.",
+        "price":299,
+        "old_price":399,
+        "features":[
+            {"name":"Setup Admin, Restaurant owner, and Delivery man panel on your hosting.", "enable": true},
+            {"name":"Configure User PWA website on your hosting.", "enable": true},
+            {"name":"Customize Business name, logo, Package Name, etc.", "enable": true},
+            {"name":"Setup SMTP Mail configuration.", "enable": true},
+            {"name":"Setup OTP configuration.", "enable": true},
+            {"name":"Setup Payment & SMS gateways.", "enable": true},
+            {"name":"Setup third party API.", "enable": true},
+            {"name":"Configure Push notification.", "enable": true},
+            {"name":"Translate full application to your local language.", "enable": false},
+            {"name":"One revision before project handover.", "enable": false}
+        ]
+    },
+    {
+        "id":3,
+        "name":"Professional",
+        "popular":true,
+        "icon":"icon-fill-crown",
+        "subtitle":"Advance your business with confidence.",
+        "price":499,
+        "old_price":599,
+        "features":[
+            {"name":"Setup Admin, Restaurant owner, and Delivery man panel on your hosting.", "enable": true},
+            {"name":"Configure User PWA website on your hosting.", "enable": true},
+            {"name":"Customize Business name, logo, Package Name, etc.", "enable": true},
+            {"name":"Setup SMTP Mail configuration.", "enable": true},
+            {"name":"Setup OTP configuration.", "enable": true},
+            {"name":"Setup Payment & SMS gateways.", "enable": true},
+            {"name":"Setup third party API.", "enable": true},
+            {"name":"Configure Push notification.", "enable": true},
+            {"name":"Translate full application to your local language.", "enable": true},
+            {"name":"One revision before project handover.", "enable": true}
+        ]
+    }
+]

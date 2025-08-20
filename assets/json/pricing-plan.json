@@ -1,0 +1,54 @@
+
+[
+    { 
+        "id": 1,
+        "title": "Essential",
+        "subtitle": "Begin with a small but powerful step.",
+        "icon": "icon-fill-flash",
+        "regular_price": 39,
+        "extended_price":89,
+        "most_popular": false,
+        "features": [
+            { "id": 1, "type": true, "name": "Admin Panel" },
+            { "id": 2, "type": true, "name": "Restaurant Owner & Staff Panel" },
+            { "id": 3, "type": true, "name": "Delivery Man Panel" },
+            { "id": 4, "type": true, "name": "User PWA Website" },
+            { "id": 5, "type": false, "name": "Delivery Boy App" },
+            { "id": 6, "type": false, "name": "Marchant/Manager App" }
+        ]
+    },
+    { 
+        "id": 2,
+        "title": "Advanced",
+        "subtitle": "Begin with a small but powerful step.",
+        "icon": "icon-fill-medal",
+        "regular_price": 64,
+        "extended_price":189,
+        "most_popular": true,
+        "features": [
+            { "id": 1, "type": true, "name": "Admin Panel" },
+            { "id": 2, "type": true, "name": "Restaurant Owner & Staff Panel" },
+            { "id": 3, "type": true, "name": "Delivery Man Panel" },
+            { "id": 4, "type": true, "name": "User PWA Website" },
+            { "id": 5, "type": true, "name": "Delivery Boy App" },
+            { "id": 6, "type": false, "name": "Marchant/Manager App" }
+        ]
+    },
+    { 
+        "id": 3,
+        "title": "Complete",
+        "subtitle": "Begin with a small but powerful step.",
+        "icon": "icon-fill-crown",
+        "regular_price": 166,
+        "extended_price":489,
+        "most_popular": false,
+        "features": [
+            { "id": 1, "type": true, "name": "Admin Panel" },
+            { "id": 2, "type": true, "name": "Restaurant Owner & Staff Panel" },
+            { "id": 3, "type": true, "name": "Delivery Man Panel" },
+            { "id": 4, "type": true, "name": "User PWA Website" },
+            { "id": 5, "type": true, "name": "Delivery Boy App" },
+            { "id": 6, "type": true, "name": "Marchant/Manager App" }
+        ]
+    }
+]

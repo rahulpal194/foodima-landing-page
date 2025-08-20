@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "name":"Merchant App",
+        "subtitle":"A handy app for restaurant owners to manage orders and coordinate the team smoothly.",
+        "regular_price": 39,
+        "extended_price":199,
+        "logo":"/images/addon/pricing/kitchen.png"
+    },
+    {
+        "id":2,
+        "name":"Delivery Man App",
+        "subtitle":"Dedicated mobile app for delivery personnel to view all active deliveries, update statuses in real time, & track routes on the go.",
+        "regular_price": 39,
+        "extended_price":299,
+        "logo":"/images/addon/pricing/kds.png"
+    }
+]

@@ -14,7 +14,7 @@
                 <ul class="flex gap-7 items-center">
                     <li class="text-base font-medium hover:text-primary"><NuxtLink to="#">Features</NuxtLink></li>
                     <li class="text-base font-medium hover:text-primary"><NuxtLink to="/demo">Demo</NuxtLink></li>
-                    <li class="text-base font-medium hover:text-primary"><NuxtLink to="#">Pricing</NuxtLink></li>
+                    <li class="text-base font-medium hover:text-primary"><NuxtLink to="/pricing">Pricing</NuxtLink></li>
                     <li class="text-base font-medium hover:text-primary"><NuxtLink to="#">Services</NuxtLink></li>
                     <li class="text-base font-medium hover:text-primary"><NuxtLink to="#">Resources</NuxtLink></li>
                     <li class="text-base font-medium hover:text-primary"><NuxtLink to="#">Company</NuxtLink></li>

@@ -9,12 +9,19 @@
     --shadow-header : 0 4px 32px 0 rgba(156, 174, 186, 0.18);
     --shadow-card : 0 16px 40px 0 rgba(1, 0, 54, 0.08);
     --shadow-connect : 0 16px 60px 0 rgba(255, 148, 135, 0.08);
+    --shadow-pricing-title : 0 6px 12px 0 rgba(156, 174, 186, 0.06);
+    --shadow-stepcard : 0 6px 16px 0 rgba(55, 106, 139, 0.04);
+    --shadow-whatsapp: inset 0 4px 8px 0 rgba(255, 255, 255, 0.80), 0 10px 32px 0 rgba(37, 211, 102, 0.25);
+    --shadow-choose: 4px 4px 32px 0 rgba(156, 174, 186, 0.12);
+    --shadow-faq : 0 6px 12px 0 rgba(186, 186, 186, 0.10);
     --drop-shadow-foodbank :2.571px 4.286px 12.857px rgba(230, 59, 95, 0.40);
     --drop-shadow-foodscan :2.143px 2.143px 8.572px rgba(50, 121, 255, 0.40); 
     --drop-shadow-foodappi :2.143px 2.143px 8.571px rgba(0, 138, 127, 0.40); 
     --drop-shadow-shopking :2.143px 2.143px 8.571px rgba(245, 81, 20, 0.40); 
     --drop-shadow-shopperzz :2.143px 2.143px 8.571px rgba(255, 101, 1, 0.40); 
     --drop-shadow-storeking :2.4px 2.4px 9.001px rgba(0, 199, 30, 0.25); 
+    --drop-shadow-process : 0 4px 16px rgba(211, 138, 169, 0.16);
+    
    }
 
 @layer base{
@@ -22,14 +29,24 @@
      body{@apply font-plus text-[#323D4E] scroll-smooth sm:overflow-x-visible overflow-x-hidden}
      button{@apply cursor-pointer}
     .sticky-header { @apply backdrop-blur-[100px] shadow-header bg-white/90 }
+
+    .whatsapp-gradient{@apply bg-linear-270 from-[#2AE971] to-[#00B142] shadow-whatsapp hover:from-[#00B142] hover:to-[#2AE971] transition-all duration-300 cursor-pointer}
     .gradient-text { @apply bg-linear-to-r text-transparent bg-clip-text from-secondary to-primary}
     .primary-button { @apply h-13 px-8 bg-gradient-to-b from-secondary to-primary rounded-full text-white text-base font-bold shadow-gradient-button active:shadow-none transition-all duration-300}
-    .button { @apply h-13 px-8 hover:bg-gradient-to-b hover:from-secondary hover:to-primary border hover:border-none border-secondary rounded-full text-secondary hover:text-white text-base font-bold shadow-button hover:shadow-gradient-button transition-all duration-300}
+    .button { @apply h-13 px-8 hover:bg-gradient-to-b hover:from-secondary hover:to-primary border hover:border-none border-secondary rounded-full text-secondary hover:text-white text-base font-bold  shadow-button hover:shadow-gradient-button transition-all duration-300}
 
     .modal { @apply bg-black/60 backdrop-blur-sm w-full h-screen inset-0 fixed flex justify-center items-center z-30 opacity-0 invisible transition-all duration-300}
     .modal.active {@apply opacity-100 visible}
     .modal-content{@apply bg-white max-w-[560px] w-full p-6 rounded-2xl max-h-[calc(100%-50px)] h-[500px] scale-y-0 -translate-y-full transition-all duration-500}
     .modal.active .modal-content { @apply scale-y-100 translate-y-0}
+
+    .pricePlan {@apply border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#FFF6F5] hover:to-[#FFF]}
+    .pricePlan.active {@apply !border-secondary bg-linear-180 from-[#FFF6F5] to-[#FFF]}
+    .pricePlan.active > button {@apply !text-white !border-none !shadow-gradient-button !bg-clip-padding !bg-gradient-to-b from-secondary to-primary cursor-pointer}
+
+    .installation-plan {@apply border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#FFF6F5] hover:to-[#FFF]}
+    .installation-plan.active {@apply !border-secondary bg-linear-180 from-[#FFF6F5] to-[#FFF]}
+    .installation-plan.active > button {@apply !text-white !border-none !shadow-gradient-button !bg-clip-padding !bg-gradient-to-b from-secondary to-primary cursor-pointer}
 
     #card-1 { @apply basis-[320px] grow xl:grow-0} 
     #card-2 { @apply basis-[486px] grow xl:grow-0}   
@@ -50,6 +67,22 @@
     .vector-bg-7{@apply bg-linear-180 from-[#A1ABF2] to-[#3F55E8] shadow-[0px_8px_8px_rgba(63,85,232,0.25)]}
     .vector-bg-8{@apply bg-linear-180 from-[#FFC79D] to-[#F4781D] shadow-[0px_8px_8px_rgba(244,120,29,0.25)]}
     .vector-bg-9{@apply bg-linear-180 from-[#F3A4D3] to-[#D7228E] shadow-[0px_8px_8px_rgba(215,34,142,0.25)]}
+
+    #choice-1 { @apply basis-[320px] grow xl:grow-0}
+    #choice-2 {@apply basis-[413px] grow xl:grow-0}
+    #choice-3 {@apply basis-[345px] grow xl:grow-0}
+    #choice-4 {@apply basis-[406px] grow xl:grow-0}
+    #choice-5 {@apply basis-[349px] grow xl:grow-0}
+    #choice-6 {@apply basis-[323px] grow xl:grow-0}
+
+    input::placeholder{@apply text-base font-normal text-[#7F8B9D]}
+
+    .thin-scrolling { @apply overflow-y-auto transition-all duration-500 }
+    .thin-scrolling:hover::-webkit-scrollbar-thumb { @apply bg-primary }
+    .thin-scrolling::-webkit-scrollbar { @apply w-[3px] }
+    .thin-scrolling::-webkit-scrollbar { @apply rounded-2xl bg-transparent }
+
+    .check-icon {@apply  text-2xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent}
 }
 @layer utilities{
     .container{@apply max-w-[1158px] w-full mx-auto px-4}
