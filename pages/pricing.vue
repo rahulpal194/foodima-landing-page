@@ -34,7 +34,7 @@
                     <p class="text-base font-semibold mb-6">{{ plan.subtitle }}</p>
                     <h6 v-if="pricingPlan=='regular'" class="text-[42px] font-bold leading-tight mb-8"><span>$</span>{{ plan.regular_price }}</h6>
                     <h6 v-if="pricingPlan=='extended'" class="text-[42px] font-bold leading-tight mb-8"><span>$</span>{{ plan.extended_price }}</h6>
-                    <button class="mb-8 w-full button !transition-none group-hover:text-white group-hover:!shadow-gradient-button group-hover:bg-gradient-to-b from-secondary to-primary">Buy Now</button>
+                    <button class="mb-8 w-full button !transition-none hover-button">Buy Now</button>
                     <ul class="flex flex-col gap-5">
                         <li v-for="feature in plan.features"
                          class="flex items-start gap-3"> 

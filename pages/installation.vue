@@ -31,7 +31,7 @@
                     <h6 class="text-3xl font-bold"><span>$</span>{{ plan.price }}</h6>
                     <small class="text-base font-bold text-[#818B9B] line-through"><span>$</span>{{ plan.old_price }}</small>
                 </div>
-                <button class="mb-8 w-full button !transition-none group-hover:text-white group-hover:!shadow-gradient-button group-hover:bg-gradient-to-b from-secondary to-primary">Buy Now</button>
+                <button class="mb-8 w-full button !transition-none hover-button">Buy Now</button>
                 <ul class="flex flex-col gap-5">
                     <li v-for="feature in plan.features"
                      class="flex items-start gap-3"> 

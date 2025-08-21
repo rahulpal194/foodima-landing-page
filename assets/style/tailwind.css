@@ -14,6 +14,10 @@
     --shadow-whatsapp: inset 0 4px 8px 0 rgba(255, 255, 255, 0.80), 0 10px 32px 0 rgba(37, 211, 102, 0.25);
     --shadow-choose: 4px 4px 32px 0 rgba(156, 174, 186, 0.12);
     --shadow-faq : 0 6px 12px 0 rgba(186, 186, 186, 0.10);
+    --shadow-input : 0 0 20px 0 rgba(55, 106, 139, 0.04);
+    --shadow-blog: 0 8px 20px 0 rgba(55, 106, 139, 0.06);
+    --shadow-paper: 0px 24px 60px 0px rgba(8, 80, 135, 0.12);
+    --drop-shadow-stepvector : 0 4px 16px rgba(211, 150, 138, 0.16);
     --drop-shadow-foodbank :2.571px 4.286px 12.857px rgba(230, 59, 95, 0.40);
     --drop-shadow-foodscan :2.143px 2.143px 8.572px rgba(50, 121, 255, 0.40); 
     --drop-shadow-foodappi :2.143px 2.143px 8.571px rgba(0, 138, 127, 0.40); 
@@ -21,7 +25,6 @@
     --drop-shadow-shopperzz :2.143px 2.143px 8.571px rgba(255, 101, 1, 0.40); 
     --drop-shadow-storeking :2.4px 2.4px 9.001px rgba(0, 199, 30, 0.25); 
     --drop-shadow-process : 0 4px 16px rgba(211, 138, 169, 0.16);
-    
    }
 
 @layer base{
@@ -32,6 +35,7 @@
 
     .whatsapp-gradient{@apply bg-linear-270 from-[#2AE971] to-[#00B142] shadow-whatsapp hover:from-[#00B142] hover:to-[#2AE971] transition-all duration-300 cursor-pointer}
     .gradient-text { @apply bg-linear-to-r text-transparent bg-clip-text from-secondary to-primary}
+    .hover-button { @apply !px-6 w-fit group-hover:border-none group-hover:bg-gradient-to-b group-hover:from-secondary group-hover:to-primary group-hover:text-white group-hover:shadow-gradient-button}
     .primary-button { @apply h-13 px-8 bg-gradient-to-b from-secondary to-primary rounded-full text-white text-base font-bold shadow-gradient-button active:shadow-none transition-all duration-300}
     .button { @apply h-13 px-8 hover:bg-gradient-to-b hover:from-secondary hover:to-primary border hover:border-none border-secondary rounded-full text-secondary hover:text-white text-base font-bold  shadow-button hover:shadow-gradient-button transition-all duration-300}
 
@@ -83,10 +87,13 @@
     .thin-scrolling::-webkit-scrollbar { @apply rounded-2xl bg-transparent }
 
     .check-icon {@apply  text-2xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent}
+
+    .custom-switcher input {@apply relative flex-shrink-0 w-[60px] h-8 cursor-pointer before:inline-block before:absolute before:inset-0 before:w-full before:h-full before:rounded-3xl before:bg-primary before:transition-all before:duration-300 after:absolute after:top-1/2 after:left-[72%] after:-translate-y-1/2 after:-translate-x-1/2 after:w-7 after:h-7 after:rounded-full after:bg-gradient-to-b after:from-white after:to-white/70 after:transition-all after:duration-300}
+    .custom-switcher input:checked {@apply after:left-[28%]}
 }
 @layer utilities{
     .container{@apply max-w-[1158px] w-full mx-auto px-4}
     .bg-custom-gradient {
-          background: linear-gradient(95deg, #FFF5F4 0%, #FFF6EF 36.81%, #F4FBFF 72.5%, #FFF7EF 100%);
+          background: linear-gradient(95deg, #FFF5F4 0%, #FFF6EF 36.81%, #F4F8FF 72.5%, #FFF7EF 100%);
       }
 }

@@ -44,7 +44,7 @@
                     </div>
                     <h6 class="text-2xl font-bold mb-3">{{feature.name}}</h6>
                     <p class="text-base font-normal mb-6">{{feature.desc}}</p>
-                    <button class="button group-hover:border-none group-hover:bg-gradient-to-b group-hover:from-secondary group-hover:to-primary group-hover:text-white group-hover:shadow-gradient-button">Explore Demo</button>
+                    <button class="button hover-button">Explore Demo</button>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@
                     <h1 class="text-3xl lg:text-[42px] font-bold leading-tight mb-6"><span class="gradient-text">Customize Foodimaa </span>to Fit Your Business Perfectly</h1>
                     <p class="text-base lg:text-lg font-normal mb-6 lg:text-left text-center">As the creator of Foodimaa, no one knows the system better than we do—and that means we can customize it exactly the way you need. From design changes and new features to third-party integrations and workflow tweaks, we’ll tailor FoodKing to fit your business perfectly.</p>
                     <div class="flex flex-wrap items-center max-lg:justify-center gap-6 flex-grow-1">
-                        <NuxtLink to="#" class="primary-button flex items-center">
+                        <NuxtLink to="#" class="!px-6 primary-button flex items-center gap-3">
                             <i class="icon-line-tidycal text-2xl"></i>
                             Book a Meeting
                         </NuxtLink>
