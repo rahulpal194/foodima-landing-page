@@ -4,6 +4,8 @@
            HEADER PART START 
      ==========================-->
     <header :class="[isSticky ? 'sticky-header': '']" class="fixed top-0 left-0 w-full z-[30]">
+        <span class="absolute -top-30 left-0 -rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
+        <span class="absolute -top-30 right-0 rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
         <div class="container !py-4">
             <div class="flex justify-between items-center">
             <NuxtLink to="/"><NuxtImg class="h-8 lg:h-9" src="/images/logo.png" alt="logo"/></NuxtLink>
@@ -155,7 +157,7 @@
                     <i class="icon-hamburger-menu gradient-text text-2xl"></i>
                 </button>
             </div>
-        </div>
+            </div>
         </div>
     </header>
     <!--==========================
@@ -206,7 +208,7 @@
             <div class="grid grid-cols-12 gap-y-12 sm:gap-x-10 pb-12">
                 <div class="col-span-12 lg:col-span-4">
                     <NuxtLink to="/" class="w-fit block mb-6">
-                        <NuxtImg class="w-30 h-auto" src="/images/logo.png" alt="FoodKing Logo" loading="lazy" />
+                        <NuxtImg class="w-30 h-auto" src="/images/logo.png" alt="Foodima Logo" loading="lazy" />
                     </NuxtLink>
                     <p class="text-lg font-normal mb-8">Foodimaa is a multi-restaurant food ordering and delivery solution built to connect restaurants and customers in a single platform. Purchase Foodimaa with source code and documentation.</p>
                     <div class="mb-8">
