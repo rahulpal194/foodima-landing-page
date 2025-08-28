@@ -3,9 +3,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-
   css:[
     '@/assets/style/tailwind.css',
+    '@/assets/style/custom.css',
     '@/assets/fonts/PlusJaKartaSans.css',
     '@/assets/icon/iconly.css'
   ],

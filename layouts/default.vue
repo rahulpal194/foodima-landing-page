@@ -4,8 +4,8 @@
            HEADER PART START 
      ==========================-->
     <header :class="[isSticky ? 'sticky-header': '']" class="fixed top-0 left-0 w-full z-[30]">
-        <span class="absolute -top-30 left-0 -rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
-        <span class="absolute -top-30 right-0 rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
+        <span class="absolute -top-30 left-0 -z-10 -rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
+        <span class="absolute -top-30 right-0 -z-10 rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
         <div class="container !py-4">
             <div class="flex justify-between items-center">
             <NuxtLink to="/"><NuxtImg class="h-8 lg:h-9" src="/images/logo.png" alt="logo"/></NuxtLink>
@@ -153,7 +153,7 @@
                 <div class=" gap-7 ">
                     
                 </div>
-                <button @click="isOpen=!isOpen" class="lg:hidden block rounded-2xl">
+                <button @click="{isOpen=!isOpen; console.log('click')}" class="lg:hidden block rounded-2xl">
                     <i class="icon-hamburger-menu gradient-text text-2xl"></i>
                 </button>
             </div>
@@ -163,6 +163,125 @@
     <!--==========================
            HEADER PART END 
     ==========================-->
+
+    <!--==========================
+        SIDEBAR PART START 
+     ==========================-->
+        <aside :class="[isOpen? 'active' : '']" class="drawer thin-scrolling">
+            <nav class="flex flex-col text-[#1A203C] [&_a]:last:border-none">
+                <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF]" to="/features"><span class="text-base font-medium">Features</span></NuxtLink>
+                <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF]" to="/demo"><span class="text-base font-medium">Demo</span></NuxtLink>
+                <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF]" to="/pricing"><span class="text-base font-medium">Pricing</span></NuxtLink>
+                <div class="dropdown-group">
+                    <button @click="handledropdown($event)" class="dropdown-btn py-4 px-2 border-b border-[#E7EAEF] flex justify-between w-full" to="/services"><span class="text-base font-medium">Services</span> <i class="icon-chevron-down text-base"></i></button>
+                    <div class="flex-col dropdown-content">
+                        <NuxtLink to="/installation" class="peer w-full flex items-center gap-4 py-4 px-2 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-blue bg-gradient-to-l from-[#73C3FF] to-[#007EDD]">
+                                <i class="icon-fill-install text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-semibold capitalize whitespace-nowrap">
+                                Installation
+                            </span>
+                        </NuxtLink>
+                        <NuxtLink to="/customization" class="peer w-full flex items-center gap-4 py-4 px-2 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-orange bg-gradient-to-l from-[#FFC773] to-[#DD3500]">
+                                <i class="icon-fill-install text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-semibold whitespace-nowrap">
+                                Customization
+                            </span>
+                        </NuxtLink>
+                        <NuxtLink to="/maintanence" class="peer w-full flex items-center gap-4 py-4 px-2 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#52EA7C] to-[#1CB803]">
+                                <i class="icon-music-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-semibold whitespace-nowrap">
+                                iCare Maintenance
+                            </span>
+                        </NuxtLink>
+                    </div>
+                </div>
+                <div class="dropdown-group">
+                    <button @click="handledropdown($event)" class="dropdown-btn py-4 px-2 border-b border-[#E7EAEF] flex justify-between w-full"><span class="text-base font-medium">Resources</span> <i class="icon-chevron-down text-base"></i></button>                        
+                    <div class="flex-col dropdown-content">
+                        <NuxtLink to="/documentation" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#FF62A6] to-[#ED0067] flex justify-center items-center">
+                                <i class="icon-clipboard-text text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">Documentation</span></NuxtLink>
+                        <NuxtLink to="/blogs" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#B077FF] to-[#7918FF] flex justify-center items-center">
+                                <i class="icon-document-text text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">Blogs</span>
+                        </NuxtLink>
+                        <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#FFB973] to-[#DD5C00] flex justify-center items-center">
+                                <i class="icon-video-play text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">Videos</span>
+                        </NuxtLink>
+                        <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#56E792] to-[#02B753] flex justify-center items-center">
+                                <i class="icon-people text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">Community</span>
+                        </NuxtLink>
+                        <NuxtLink to="faq" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#73C3FF] to-[#007EDD] flex justify-center items-center">
+                                <i class="icon-message-question text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">FAQs</span>
+                        </NuxtLink>
+                        <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#7AA0FF] to-[#034BFF] flex justify-center items-center">
+                                <i class="icon-music-play text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">Support</span>
+                        </NuxtLink>
+                    </div>
+                </div>
+                <div class="dropdown-group">
+                    <button @click="handledropdown($event)" class="dropdown-btn py-4 px-2 border-b border-[#E7EAEF] flex justify-between w-full"><span class="text-base font-medium">Company</span> <i class="icon-chevron-down text-base"></i></button>
+                    <div class="flex-col dropdown-content">
+                        <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#FF62A6] to-[#ED0067] flex justify-center items-center">
+                                <i class="icon-clipboard-text text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">About Us</span></NuxtLink>
+                        <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#B077FF] to-[#7918FF] flex justify-center items-center">
+                                <i class="icon-document-text text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">Contact Us</span>
+                        </NuxtLink>
+                        <NuxtLink to="testimonial" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#FFB973] to-[#DD5C00] flex justify-center items-center">
+                                <i class="icon-video-play text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">Testimonial</span>
+                        </NuxtLink>
+                        <NuxtLink to="faq" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#73C3FF] to-[#007EDD] flex justify-center items-center">
+                                <i class="icon-message-question text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">FAQs</span>
+                        </NuxtLink>
+                        <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#7AA0FF] to-[#034BFF] flex justify-center items-center">
+                                <i class="icon-music-play text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                            </span>
+                            <span class="text-base font-medium">Support</span>
+                        </NuxtLink>
+                    </div>
+                </div>
+                <NuxtLink to="#" class="py-4 px-2 border-b border-[#E7EAEF]"><span class="text-primary text-base font-bold">Hire Us</span></NuxtLink>
+            </nav>
+            <button class="primary-button w-full">Sign In</button>
+        </aside>
+    <!--==========================
+        SIDEBAR PART START 
+     ==========================-->
 
     <slot/>
 
@@ -327,3 +446,4 @@
     };
 
 </script>
+

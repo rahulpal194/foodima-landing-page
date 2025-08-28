@@ -30,7 +30,7 @@
                  <p class="text-[15px] font-normal">The system refreshes every 1 hour and your all demo data will be removed. So, you may need to clear your cookies and login again using demo credentials.</p>
             </div>
             <div class="flex flex-wrap gap-6">
-                <div v-for="feature in features.slice(0,6)" :id="`card-${feature.id}`" class="group bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
+                <div v-for="feature in features.filter((item)=>item.addon==false)" :id="`demo-card-${feature.id}`" class="group bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
                     <div class="flex items-start justify-between">
                         <div :class="`vector-bg-${feature.id}`" class="w-9 h-9 rounded-full mb-6 flex items-center justify-center">
                             <i :class="feature.vector" class="text-xl text-white"></i>
@@ -44,7 +44,7 @@
                     </div>
                     <h6 class="text-2xl font-bold mb-3">{{feature.name}}</h6>
                     <p class="text-base font-normal mb-6">{{feature.desc}}</p>
-                    <button class="button hover-button">Explore Demo</button>
+                    <button class="button hover-button !h-12">Explore Demo</button>
                 </div>
             </div>
         </div>
@@ -63,8 +63,8 @@
                 <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Turn Up the Flavor<span class="gradient-text"> with Addons!</span></h1>
                  <p class="text-base lg:text-lg font-normal text-center lg:px-24">Discover addons that bring flexibility, automation, and convenience — all in one seamless experience.</p>
             </div>
-            <div class="flex flex-wrap gap-6">
-                <div v-for="feature in features.slice(7,9)" :id="`card-${feature.id}`" class="group bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div v-for="feature in features.filter((item)=>item.addon==true)" :id="`demo-card-${feature.id}`" class="group bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
                     <div class="flex items-start justify-between">
                         <div :class="`vector-bg-${feature.id}`" class="w-9 h-9 rounded-full mb-6 flex items-center justify-center">
                             <i :class="feature.vector" class="text-xl text-white"></i>
