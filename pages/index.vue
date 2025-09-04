@@ -353,7 +353,7 @@
                     </div>
                 </div>
             </div>
-            <button class="primary-button inline-flex justify-enter">Explore All Features</button>
+            <button class="primary-button block mx-auto">Explore All Features</button>
         </div>
     </section>
      <!--===============================
