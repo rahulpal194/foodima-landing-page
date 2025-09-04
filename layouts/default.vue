@@ -133,7 +133,7 @@
                                     Contact Us
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/testimonial" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <NuxtLink to="#" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
                                 <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#FFB973] to-[#DD5C00]">
                                     <i class="icon-video-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                                 </span>
@@ -191,7 +191,7 @@
                                 Customization
                             </span>
                         </NuxtLink>
-                        <NuxtLink to="/maintanence" class="peer w-full flex items-center gap-4 py-4 px-2 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                        <NuxtLink to="/icare" class="peer w-full flex items-center gap-4 py-4 px-2 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
                             <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#52EA7C] to-[#1CB803]">
                                 <i class="icon-music-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                             </span>
@@ -209,7 +209,7 @@
                                 <i class="icon-clipboard-text text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                             </span>
                             <span class="text-base font-medium">Documentation</span></NuxtLink>
-                        <NuxtLink to="/blogs" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                        <NuxtLink to="/blog" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
                             <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#B077FF] to-[#7918FF] flex justify-center items-center">
                                 <i class="icon-document-text text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                             </span>
@@ -255,7 +255,7 @@
                             </span>
                             <span class="text-base font-medium">Contact Us</span>
                         </NuxtLink>
-                        <NuxtLink to="testimonial" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                        <NuxtLink to="#" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
                             <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#FFB973] to-[#DD5C00] flex justify-center items-center">
                                 <i class="icon-video-play text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                             </span>
@@ -354,22 +354,22 @@
                         <div class="col-span-12 sm:col-span-6 md:col-span-4">
                             <h3 class="text-2xl font-semibold mb-8">Company</h3>
                             <nav class="flex flex-col gap-6 [&_a]:hover:text-primary [&_a]:w-fit">
-                                <NuxtLink class="text-lg font-normal" to="/about">About Us</NuxtLink>
-                                <NuxtLink class="text-lg font-normal" to="/contact">Contact Us</NuxtLink>
-                                <NuxtLink class="text-lg font-normal" to="/privacy">Privacy Policy</NuxtLink>
-                                <NuxtLink class="text-lg font-normal" to="/refund">Refund Policy</NuxtLink>
-                                <NuxtLink class="text-lg font-normal" to="/support">Support Policy</NuxtLink>
-                                <NuxtLink class="text-lg font-normal" to="/cookie">Cookie Policy</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">About Us</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">Contact Us</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">Privacy Policy</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">Refund Policy</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">Support Policy</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">Cookie Policy</NuxtLink>
                             </nav>
                         </div>
                         <div class="col-span-12 sm:col-span-6 md:col-span-4">
                             <h3 class="text-2xl font-semibold mb-8">Quick Links</h3>
                             <nav class="flex flex-col gap-6 [&_a]:hover:text-primary [&_a]:w-fit">
-                                <NuxtLink class="text-lg font-normal" to="/demo">Explore Demo</NuxtLink>
-                                <NuxtLink class="text-lg font-normal" to="/documentation">Documentations</NuxtLink>
-                                <NuxtLink class="text-lg font-normal" to="/testimonial">Testimonials</NuxtLink>
-                                <NuxtLink class="text-lg font-normal" to="/faq">FAQs</NuxtLink>
-                                <NuxtLink class="text-lg font-normal" to="/blogs">Blogs</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">Explore Demo</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">Documentations</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">Testimonials</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">FAQs</NuxtLink>
+                                <NuxtLink class="text-lg font-normal" to="#">Blogs</NuxtLink>
                             </nav>
                         </div>
                         <div class="col-span-12 md:col-span-4">

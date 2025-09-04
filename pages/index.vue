@@ -652,7 +652,7 @@
                     <h6 class="mb-6 flex-grow line-clamp-2 px-6 pt-6 text-lg font-bold leading-7">{{ blog.title }}</h6>
                     <div class="flex justify-between gap-x-6 gap-y-3 px-6 pb-6 flex-wrap lg:flex-nowrap">
                         <span class="text-lg font-medium leading-tight">{{ blog.date }}</span>
-                        <NuxtLink :to="`/blogs/${blog.id}`" @click="blogDetails.setBlog(blog)" class="text-primary font-medium text-lg leading-tight">Read more</NuxtLink>
+                        <NuxtLink :to="`/blog/${blog.id}`" @click="blogDetails.setBlog(blog)" class="text-primary font-medium text-lg leading-tight">Read more</NuxtLink>
                     </div>
                 </div>
             </div>
