@@ -37,7 +37,7 @@
                                     Customization
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/maintanence" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <NuxtLink to="/icare" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
                                 <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#52EA7C] to-[#1CB803]">
                                     <i class="icon-music-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                                 </span>
@@ -65,7 +65,7 @@
                                     Documentation
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/blogs" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <NuxtLink to="/blog" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
                                 <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-orange bg-gradient-to-l from-[#B077FF] to-[#7918FF]">
                                     <i class="icon-document-text text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                                 </span>
@@ -149,7 +149,7 @@
 
                     <NuxtLink to="/#">Partner</NuxtLink>
                 </nav>
-                <NuxtLink to="#" class="primary-button h-12 hidden lg:flex items-center">Sign In</NuxtLink>
+                <NuxtLink to="#" class="primary-button !h-12 hidden lg:flex items-center">Sign In</NuxtLink>
                 <div class=" gap-7 ">
                     
                 </div>
@@ -277,7 +277,7 @@
                 </div>
                 <NuxtLink to="#" class="py-4 px-2 border-b border-[#E7EAEF]"><span class="text-primary text-base font-bold">Hire Us</span></NuxtLink>
             </nav>
-            <button class="primary-button w-full">Sign In</button>
+            <button class="primary-button h-12 w-full">Sign In</button>
         </aside>
     <!--==========================
         SIDEBAR PART START 

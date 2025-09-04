@@ -66,6 +66,301 @@
     =================================-->
 
     <!--===============================
+           KEY FEATURES PART START 
+     =================================-->
+     <section class="container">
+        <div class="mb-20 sm:mb-40">
+            <div class="max-w-[934px] w-full mx-auto flex flex-col items-center justify-center mb-8 md:mb-16">
+                <span class="text-base font-medium py-2.5 px-4 border border-[#E0E6F8] rounded-full mb-6 text-primary">Key Features</span>
+                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Powerful & Effective<span class="text-primary"> Features to Automate & Optimize </span>Your Restaurant Effortlessly</h1>
+                <p class="text-base lg:text-lg font-normal text-center lg:px-24">Packed with essential features to streamline your restaurant operations, boost efficiency, and enhance customer experience.</p>
+            </div>
+            <div class="w-full relative p-4 mb-8 bg-white rounded-full">
+                <nav class="flex justify-between overflow-x-auto scrollbar-hide">
+                    <button 
+                        type="button" 
+                        v-for="featureTab in autoplaytab.featuretabs.value"
+                        @click="autoplaytab.handleFeatureShow(featureTab.id, $event)"
+                        :key="featureTab.id"
+                        :ref="el=>tabRefs[featureTab.id] = el"
+                        :class="featureTab.id === autoplaytab.featureActive.value ? 'active' : ''"
+                        class="navbtn w-fit text-base lg:text-lg font-semibold leading-5 lg:leading-6 rounded-full px-4 py-3 flex items-center whitespace-nowrap flex-shrink-0 gap-2 ">
+                        <i :class="[autoplaytab.featureActive.value===featureTab.id? 'text-white': '', featureTab.icon]" class="text-xl text-[#818B9B]"></i>
+                        <span>{{ featureTab.name }}</span>
+                    </button>
+                </nav>
+                <div class="w-full h-12 bg-[#FFA087] absolute left-0 right-0 top-1/2 -translate-y-1/2 -z-10 bg-linear-270 from-[#FFB19B] from-0% via-[#DCA4FF] via-50% to-[#FF97BD] to-100% blur-[30px]"></div>
+                <span class="lg:w-[580px] lg:h-[75px] bg-[#FFA087] blur-[300px] rotate-[35deg] absolute -bottom-0 left-1/4"></span>
+            </div> 
+            <div v-if="autoplaytab.featureActive.value == 1" class="mb-12 md:mb-16">
+                <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                            <div class="sm:py-8 ps-8 flex-shrink">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Admin Dashboard</h3>
+                                <p class="text-base font-normal overflow-ellipsis">The dashboard shows real-data where the admin can see business analytics, order statistics, sales summary, orders summary, most popular items and so on.</p>
+                            </div>
+                            <NuxtImg class="max-w-[414px] w-full h-[286px]" src="/images/features/admin-panel/admin-panel-1.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Built-in POS</h3>
+                                <p class="text-base font-normal">Admin can create dine-in, takeaway, delivery order from POS & choose payment option also.</p>
+                            </div>
+                            <NuxtImg class="h-[185px] w-full" src="/images/features/admin-panel/admin-panel-2.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4 ">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">QR Code Menu Maker</h3>
+                                <p class="text-base font-normal">Admin can create QR code for each table and link to the restaurant’s menu where customers can order from table using this qr code.</p>
+                            </div>
+                            <NuxtImg class="max-w-[324px] h-[166px] w-full" src="/images/features/admin-panel/admin-panel-3.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                            <div class="sm:py-8 ps-8 flex-shrink">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Add Items with Variations & Addon</h3>
+                                <p class="text-base font-normal">In setting option in admin panel, admin can add item categories, items with variations & extras, item attributes, variation wise pricing, etc.</p>
+                            </div>
+                            <NuxtImg class="w-[368px] h-[286px]" src="/images/features/admin-panel/admin-panel-4.png" alt="addon"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-if="autoplaytab.featureActive.value == 2" class="mb-12 md:mb-16">
+                <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 px-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Branch Manager Dashboard</h3>
+                                <p class="text-base font-normal overflow-ellipsis">The dashboard shows real-data where the branch manager can see business analytics, order statistics, sales summary, orders summary, most popular items and so on.</p>
+                            </div>
+                            <NuxtImg class="h-[286px] w-full" src="/images/features/branch-staff/branch-staff-1.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-8 pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Chef/Kitchen Dashboard</h3>
+                                <p class="text-base font-normal">The dashboard shows real-data where the chef can see business analytics, order statistics, sales summary, orders summary, most popular items and so on of his branch.</p>
+                            </div>
+                            <NuxtImg class="h-[286px] w-full" src="/images/features/branch-staff/branch-staff-2.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 px-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">POS Operator Dashboard</h3>
+                                <p class="text-base font-normal">The dashboard shows real-data where the POS operator can see business analytics, order statistics, sales summary, orders summary, most popular items and so on.</p>
+                            </div>
+                            <NuxtImg class="max-w-[388px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/branch-staff/branch-staff-3.png" alt="addon"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Point of Sale (POS)</h3>
+                                <p class="text-base font-normal">Admin can create dine-in, takeaway, delivery order from POS & choose payment option also.</p>
+                            </div>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/branch-staff/branch-staff-4.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-if="autoplaytab.featureActive.value == 3" class="mb-12 md:mb-16">
+                <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                            <div class="sm:py-8 ps-8 flex-shrink">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Responsive User Website</h3>
+                                <p class="text-base font-normal overflow-ellipsis">FoodKing’s user website works seamlessly on all devices, making it easy for customers to browse, order, and track—anytime, anywhere.</p>
+                            </div>
+                            <NuxtImg class="w-[414px] h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-1.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Web Banners</h3>
+                                <p class="text-base font-normal">Highlight offers, promotions, or important updates with top banners on user website—grab attention & drive engagement.</p>
+                            </div>
+                            <NuxtImg class="max-w-[324px] h-[185px] w-full" src="/images/features/user-site/user-site-2.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col justify-between items-center gap-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Cookie Banner</h3>
+                                <p class="text-base font-normal">FoodKing includes a built-in cookie banner to help you stay transparent and compliant—inform users and gain consent with ease.</p>
+                            </div>
+                            <NuxtImg class="max-w-[388px] h-[168px] w-full" src="/images/features/user-site/user-site-3.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                            <div class="sm:py-8 ps-8 flex-shrink">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Featured & Most Popular Items</h3>
+                                <p class="text-base font-normal">Showcase popular & featured items to boost visibility and drive more orders—automatically or manually highlight what’s hot on your menu.</p>
+                            </div>
+                            <NuxtImg class="max-w-[388px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-4.png" alt="addon"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-if="autoplaytab.featureActive.value == 4" class="mb-12 md:mb-16">
+                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 px-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col items-center gap-6 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Scan QR for Menu</h3>
+                                <p class="text-base font-normal overflow-ellipsis">Customers can quickly access the full menu by scanning a QR code from table—making ordering easy, contactless, and convenient.</p>
+                            </div>
+                            <NuxtImg class="h-[271px] flex-grow flex-shrink-0" src="/images/features/qr-code/qr-code-1.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-8 pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col justify-between items-center gap-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Cart & Checkout</h3>
+                                <p class="text-base font-normal">Allowing customers to review their selected items, adjust quantities, choose payment option, and complete their order quickly and securely.</p>
+                            </div>
+                            <NuxtImg class="h-[271px] w-full" src="/images/features/qr-code/qr-code-2.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-6">
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col justify-between items-center gap-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Item Details</h3>
+                                <p class="text-base font-normal">A quick view modal of each items that showing item details with sizes, extras, addons, and quantity.</p>
+                            </div>
+                            <NuxtImg class="h-[184px]" src="/images/features/qr-code/qr-code-3.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col items-center gap-4 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Veg/Non-veg Filter</h3>
+                                <p class="text-base font-normal">Let customers quickly filter dishes by veg or non-veg—ensuring a personalized and hassle-free browsing experience.</p>
+                            </div>
+                            <NuxtImg class="h-[184px] flex-grow flex-shrink-0" src="/images/features/qr-code/qr-code-4.png" alt="addon"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col items-center gap-4 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Order Tracking</h3>
+                                <p class="text-base font-normal">Customers can track their order—from confirmation to prepared and delivery—ensuring transparency & peace of mind.</p>
+                            </div>
+                            <NuxtImg class="h-[184px] flex-grow flex-shrink-0" src="/images/features/qr-code/qr-code-5.png" alt="order_tracking"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-if="autoplaytab.featureActive.value == 5" class="mb-12 md:mb-16">
+                <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 px-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col items-center gap-6 sm:gap-8 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Home Screen</h3>
+                                <p class="text-base font-normal overflow-ellipsis">The home screen gives users a smooth start with menu categories, popular and featured items, plus eye-catching offer banners—all designed to help users discover and order quickly.</p>
+                            </div>
+                            <NuxtImg class="h-[271px]" src="/images/features/user-app/user-app-1.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-8 pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col justify-between items-center gap-4 h-full">
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold mb-4">Item or Dish Search</h3>
+                                <p class="text-base font-normal">Help customers find their favorite dishes fast with a smart search bar—type a name or keyword and accurate results make ordering easier and faster.</p>
+                            </div>
+                            <NuxtImg class="h-[271px]" src="/images/features/user-app/user-app-2.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col justify-between items-center gap-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Offer Banner</h3>
+                                <p class="text-base font-normal">Catch attention with vibrant offer banners that highlight discounts, deals, and special promotions right on the app’s home page.</p>
+                            </div>
+                            <NuxtImg class="max-w-[324px] h-[166px] w-full" src="/images/features/user-app/user-app-3.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                            <div class="sm:py-8 ps-8 flex-shrink">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Menu Items List</h3>
+                                <p class="text-base font-normal">Browse a clean, organized list of menu items with images, prices, and brief descriptions—making it easy to explore and choose your favorites.</p>
+                            </div>
+                            <NuxtImg class="max-w-[396px] w-full h-[286px]" src="/images/features/user-app/user-app-4.png" alt="addon"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-if="autoplaytab.featureActive.value == 6" class="mb-12 md:mb-16">
+                <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 px-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col items-center gap-6 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold">Home Screen</h3>
+                                <p class="text-base font-normal overflow-ellipsis">The home screen shows delivery stats of a quick overview of their activity and a real-time list of active assigned orders—keeping delivery boys informed and on track.</p>
+                            </div>
+                            <NuxtImg class="h-[271px] flex-grow flex-shrink-0" src="/images/features/delivery-app/delivery-app-1.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-8 pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col justify-between items-center gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold">Active Orders & Details</h3>
+                                <p class="text-base font-normal">Delivery boys can view all active orders with full details, including customer info, address, items, and delivery instructions—ensuring smooth, accurate deliveries.</p>
+                            </div>
+                            <NuxtImg class="h-[271px] w-full" src="/images/features/delivery-app/delivery-app-2.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 px-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col items-center gap-6 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold">View Delivery Direction</h3>
+                                <p class="text-base font-normal overflow-ellipsis">Delivery boys can easily view the best route to the customer using integrated map directions—making deliveries faster and more efficient.</p>
+                            </div>
+                            <NuxtImg class="h-[271px] flex-grow flex-shrink-0" src="/images/features/delivery-app/delivery-app-3.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-8 pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div class="flex flex-col md:flex-row lg:flex-col justify-between items-center gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Order History</h3>
+                                <p class="text-base font-normal">Delivery boys can access a complete history of their past deliveries—helpful for tracking performance and resolving any order-related issues.</p>
+                            </div>
+                            <NuxtImg class="h-[271px]" src="/images/features/delivery-app/delivery-app-4.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="primary-button inline-flex justify-enter">Explore All Features</button>
+        </div>
+    </section>
+     <!--===============================
+           KEY FEATURES PART END 
+     =================================-->
+
+    <!--===============================
             SIX STEPS PART START 
     =================================-->
     <section class="bg-[url('/images/six-steps-bg.png')] bg-contain md:bg-cover bg-no-repeat bg-top mb-20">
@@ -406,10 +701,10 @@
      =================================-->
 
     <ModalComponent :class="[isActive? 'active':'']">
-        <button @click="closeModal">
+        <button @click="closeModal" class="absolute top-0.5 right-0.5">
             <i class="icon-close-circle text-2xl"></i>
         </button>
-        <h1>Hello</h1>
+        <iframe class="w-full h-full" width="560" height="315" src="https://www.youtube.com/embed/IHqGxTJ_ISA?si=CXg-uFqDoYE1Zjpl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </ModalComponent>
 
 </template>
@@ -420,6 +715,24 @@ import steps from "@/assets/json/steps.json"
 import blogs from "@/assets/json/blogs.json"
 import ModalComponent from "~/components/ModalComponent.vue";
 import { useModal } from "~/composable/modal.js"
-const {openModal, closeModal ,isActive} = useModal();
+import { useAutoplayTab } from "~/composable/autoplayTab";
+const {openModal,isActive, closeModal} = useModal();
+
+    const tabRefs ={}
+    const tabContainer = ref(null)
+    const featureTabs = ref([
+        { id: 1, name: 'Admin Panel', icon:"icon-admin-panel" },
+        { id: 2, name: 'Restaurant Owner & Staffs Panel', icon:"icon-branch-panel" },
+        { id: 3, name: 'Delivery Man Panel', icon:"icon-user-site" },
+        { id: 4, name: 'User PWA Website' , icon:"icon-qr-order"}
+    ])
+    const autoplaytab = useAutoplayTab(
+        {
+           tabSource: featureTabs,
+            getScrollElements:()=>({
+                btnElement: tabRefs[autoplaytab.featureActive.value]
+            })
+        }
+    )
 
 </script>

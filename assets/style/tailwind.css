@@ -42,7 +42,7 @@
 
     .modal { @apply bg-black/60 backdrop-blur-sm w-full h-screen inset-0 fixed flex justify-center items-center z-30 opacity-0 invisible transition-all duration-300}
     .modal.active {@apply opacity-100 visible}
-    .modal-content{@apply bg-white max-w-[560px] w-full p-6 rounded-2xl max-h-[calc(100%-50px)] h-[500px] scale-y-0 -translate-y-full transition-all duration-500}
+    .modal-content{@apply relative bg-white max-w-[560px] w-full p-6 rounded-2xl aspect-video scale-y-0 -translate-y-full transition-all duration-500}
     .modal.active .modal-content { @apply scale-y-100 translate-y-0}
 
     .drawer{@apply fixed top-0 left-1/2 max-w-[95%] h-auto max-h-[calc(100%-150px)] w-full mx-auto bg-white px-4 py-6 
@@ -60,6 +60,9 @@
     .pricePlan {@apply border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#FFF6F5] hover:to-[#FFF]}
     .pricePlan.active {@apply !border-secondary bg-linear-180 from-[#FFF6F5] to-[#FFF]}
     .pricePlan.active > button {@apply !text-white !border-none !shadow-gradient-button !bg-clip-padding !bg-gradient-to-b from-secondary to-primary cursor-pointer}
+
+    .navbtn.active{@apply !bg-primary !text-white}
+    .navbtn:hover{@apply bg-linear-90 from-[#FFD9D5] to-white !text-black transition-all duration-300}
 
     .installation-plan {@apply border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#FFF6F5] hover:to-[#FFF]}
     .installation-plan.active {@apply !border-secondary bg-linear-180 from-[#FFF6F5] to-[#FFF]}
