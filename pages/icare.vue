@@ -45,7 +45,7 @@
         <div class="container">
             <div class="mb-12 sm:mb-16 text-center">
                 <div class="max-w-[742px] w-full mx-auto">
-                    <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">
+                    <h1 class="heading mb-6">
                         <span class="gradient-text">Pick a Plan</span>
                         —We’ll Handle the Rest
                     </h1>
@@ -64,7 +64,7 @@
             </div>
             <div class="relative">
                 <div class="overflow-x-auto overflow-y-hidden shadow-card rounded-3xl bg-white">
-                    <span class="absolute -z-10 top-32 left-1/2 -translate-x-1/2 w-[580px] h-[75px] rotate-[35deg] blur-[300px] bg-[#FFC9C2]"></span>
+                    <span class="blur-rect"></span>
                     <table class="w-full">
                         <thead class="border-b border-[#E7EAEF]">
                             <tr>

@@ -4,9 +4,9 @@
      =================================-->
      <section class="pt-26 lg:pt-40 mb-12 relative">
         <div class="container">
-            <div class="text-sm sm:text-base font-medium text-primary px-4 py-3 sm:py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3 sm:mb-5">Foodking Demo</div>
+            <div class="title mb-3 sm:mb-5">Foodking Demo</div>
             <div class="max-w-[790px] w-full mx-auto">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">No Monthly Bills—Just a<span class="gradient-text"> One-Time Purchase </span>and Full Access</h1>
+                <h1 class="heading mb-6">No Monthly Bills—Just a<span class="gradient-text"> One-Time Purchase </span>and Full Access</h1>
                 <p class="text-base lg:text-lg font-normal text-center lg:px-24">Choose the perfect plan for your multi-branch restaurant business and get started instantly!</p>
             </div>
         </div>
@@ -21,25 +21,41 @@
      <section class="mb-20 sm:mb-40" id="pricing-plan">
         <div class="container">
             <div class="bg-white rounded-full shadow-pricing-title w-fit mx-auto mb-12 p-2 flex gap-6 items-center h-[60px]">
-                 <button @click="pricingPlan = 'regular'" type="button" :class="pricingPlan == 'regular' ? 'primary-button h-11 px-6' : 'text-black ps-8'" class="w-full rounded-full leading-tight text-base font-bold capitalize transition-none">Regular</button>
-                 <button @click="pricingPlan = 'extended'" type="button" :class="pricingPlan == 'extended' ? 'primary-button h-11 px-6' : 'text-black pr-8'" class="w-full rounded-full leading-tight text-base font-bold capitalize transition-none">Extended</button>
+                 <button @click="pricingPlan = 'regular'" type="button" :class="pricingPlan == 'regular' ? 'primary-button px-6' : 'text-black ps-8'" class="h-11 w-full rounded-full leading-tight text-base font-bold capitalize transition-none">Regular</button>
+                 <button @click="pricingPlan = 'extended'" type="button" :class="pricingPlan == 'extended' ? 'primary-button px-6' : 'text-black pr-8'" class="h-11 w-full rounded-full leading-tight text-base font-bold capitalize transition-none">Extended</button>
             </div>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div v-for="plan in plans" :class="[plan.most_popular ? 'active' : '']" class="pricePlan group p-6 rounded-3xl">
-                    <div class="flex justify-between mb-4">
-                        <div class="w-9 h-9 rounded-full bg-[#FFEBE9] flex items-center justify-center"><i :class="plan.icon" class="text-primary"></i></div>
-                        <span v-if="plan.most_popular" class="text-xs font-semibold bg-[#007EDD] h-fit px-2 py-1.5 rounded-full text-white">Most Popular</span>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="col-span-3 md:col-span-1 rounded-xl bg-[#FFF7F5] p-6 flex flex-col gap-6 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary mb-3 text-center">Regular License</h3>
+                        <p class="text-base font-semibold text-center">For Personal Project</p>
                     </div>
-                    <h2 class="text-primary font-bold text-2xl mb-3">{{ plan.title }}</h2>
-                    <p class="text-base font-semibold mb-6">{{ plan.subtitle }}</p>
-                    <h6 v-if="pricingPlan=='regular'" class="text-[42px] font-bold leading-tight mb-8"><span>$</span>{{ plan.regular_price }}</h6>
-                    <h6 v-if="pricingPlan=='extended'" class="text-[42px] font-bold leading-tight mb-8"><span>$</span>{{ plan.extended_price }}</h6>
-                    <button class="mb-8 w-full button !transition-none hover-button">Buy Now</button>
-                    <ul class="flex flex-col gap-5">
-                        <li v-for="feature in plan.features"
-                         class="flex items-start gap-3"> 
-                         <i :class="feature.type? 'icon-line-check text-[#31C970]':'icon-line-minus text-[#818B9B]'" class="text-2xl"></i>
-                         <span :class="feature.type? '':'text-[#818B9B]'" class="text-lg font-medium leading-tight">{{ feature.name }}</span></li>
+                    <h6 class="text-[42px] font-bold">$69</h6>
+                    <button class="primary-button">Contact Support Team</button>
+                </div>
+                <div class="col-span-3 md:col-span-2 rounded-2xl border border-[#FFD8D3] p-6 flex flex-col">
+                    <p class="text-lg font-normal flex-1 mb-8 sm:mb-12">Get started with the Regular License & power your business with premium features and lifetime updates.</p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <li class="flex gap-2 items-center">
+                            <i class="icon-check-circle text-xl gradient-text"></i>
+                            <span class="text-base font-medium leading-5">Admin Panel</span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <i class="icon-check-circle text-xl gradient-text"></i>
+                            <span class="text-base font-medium leading-5">Staffs Panel</span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <i class="icon-check-circle text-xl gradient-text"></i>
+                            <span class="text-base font-medium leading-5">Restaurant Owner Panel</span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <i class="icon-check-circle text-xl gradient-text"></i>
+                            <span class="text-base font-medium leading-5">Customer PWA Website</span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <i class="icon-check-circle text-xl gradient-text"></i>
+                            <span class="text-base font-medium leading-5">Delivery Man Panel</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -54,9 +70,9 @@
      =================================-->
      <section class="mb-20 sm:mb-40">
         <div class="container">
-            <div class="text-sm sm:text-base font-medium text-primary px-4 py-3 sm:py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3 sm:mb-5">Difference Between Regular & Extended</div>
+            <div class="title mb-3 sm:mb-5">Difference Between Regular & Extended</div>
             <div class="max-w-[790px] w-full mx-auto mb-12">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Look at the<span class="gradient-text"> License Comparison </span></h1>
+                <h1 class="heading mb-6">Look at the<span class="gradient-text"> License Comparison </span></h1>
                 <p class="text-base lg:text-lg font-normal text-center lg:px-24">Get the right license for your goals and deliver a stronger, more valuable experience to your customers.</p>
             </div>
             <div class="relative">
@@ -94,47 +110,6 @@
         LICENSE COMPARISON PART END
      =================================-->
 
-     <!--===============================
-           ADDON PRICING PART START
-     =================================-->
-     <section>
-        <div class="pt-20 pb-20 sm:pb-40 md:px-20 bg-[url('/images/six-steps-bg.png')] bg-contain md:bg-cover bg-no-repeat bg-top">
-            <div class="container">
-                <div class="text-sm sm:text-base font-medium text-primary px-4 py-3 sm:py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3 sm:mb-5">Addon Pricing</div>
-                <div class="max-w-[460px] md:max-w-[542px] lg:max-w-[732px] w-full mx-auto flex flex-col items-center justify-center px-6 lg:px-0 mb-12">
-                    <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Supercharge with Premium<span class="gradient-text"> Foodima Addons </span>– See the Prices</h1>
-                    <p class="text-base lg:text-lg font-normal text-center lg:px-10">Explore advanced features designed to boost performance and tailor your system to your needs.</p>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div v-for="plan in addonplans" class="p-6 rounded-2xl shadow-stepcard bg-linear-180 from-[#FFFAFC] to-[#FFFF]">
-                        <div class="mb-4">
-                            <NuxtImg class="w-12 drop-shadow-[0px_8px_16px_rgba(221,49,144,0.25)] mb-6" :src="plan.logo"/>
-                            <h6 class="text-2xl font-bold mb-4">{{ plan.name }}</h6>
-                            <p class="text-base font-normal">{{ plan.subtitle }}</p>
-                        </div>
-                        <div class="border-b last:border-none border-[#E5EDF3] flex justify-between items-center pt-6 pb-6">
-                            <div>
-                                <p>Regular License</p>
-                                <h6 class="text-[28px] font-semibold text-primary">${{ plan.regular_price }}</h6>
-                            </div>
-                            <button class="button h-11 px-6">Buy Now</button>
-                        </div>
-                        <div class="border-b last:border-none border-[#E5EDF3] flex justify-between items-center pt-6 last:pb-0">
-                            <div>
-                                <p>Extended License</p>
-                                <h6 class="text-[28px] font-semibold text-primary">${{ plan.extended_price }}</h6>
-                            </div>
-                            <button class="button h-11 px-6">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section> 
-     <!--===============================
-           ADDON PRICING PART END
-     =================================-->
-
     <!--===============================
               ACTION PART START 
      =================================-->
@@ -156,7 +131,7 @@
                             <span class="gradient-text">Multi-Restaurant Food Business</span>
                             Today!
                             </h2>
-                        <p class="text-base font-normal text-center mb-6">Stay ahead in the game with the best restaurant business solution.</p>
+                        <p class="text-base font-normal text-center mb-6">Stay ahead in the game with the best multi-restaurant food delivery business solution.</p>
                         <div class="flex flex-wrap gap-6 items-center justify-center">
                              <button class="primary-button">Buy Now</button>
                              <button class="button">Explore Demo</button>
@@ -171,8 +146,6 @@
      =================================-->
 </template>
 <script setup>
-import plans from '@/assets/json/pricing-plan.json';
-import addonplans from '@/assets/json/addon-plan.json'
  const pricingPlan=ref('regular')
  const licenseFeature = ref([
     {id:1, name:"Lifetime License Validity", regular: true, extended:true},

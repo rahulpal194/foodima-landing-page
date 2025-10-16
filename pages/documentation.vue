@@ -5,7 +5,7 @@
      <section class="pt-26 lg:pt-40 mb-12 sm:mb-16">
         <div class="container">
             <div class="max-w-[790px] w-full mx-auto">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">FoodKing<span class="gradient-text"> Documentation</span></h1>
+                <h1 class="heading mb-6">FoodKing<span class="gradient-text"> Documentation</span></h1>
                 <p class="text-base lg:text-lg font-normal text-center">Everything you need to set up, manage, and master FoodKing.</p>
             </div>
         </div>

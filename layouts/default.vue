@@ -4,8 +4,8 @@
            HEADER PART START 
      ==========================-->
     <header :class="[isSticky ? 'sticky-header': '']" class="fixed top-0 left-0 w-full z-[30]">
-        <span class="absolute -top-30 left-0 -z-10 -rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
-        <span class="absolute -top-30 right-0 -z-10 rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
+        <span class="hidden lg:block absolute -top-30 left-0 -z-[999] -rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
+        <span class="hidden lg:block absolute -top-30 right-0 -z-[999] rotate-45 blur-[52px] w-24 h-[440px] bg-linear-to-b from-[rgba(234,25,0,0.24)] from-1.66%, to-[rgba(234,25,0,0.00)] to-100%]"></span>
         <div class="container !py-4">
             <div class="flex justify-between items-center">
             <NuxtLink to="/"><NuxtImg class="h-8 lg:h-9" src="/images/logo.png" alt="logo"/></NuxtLink>
@@ -148,8 +148,9 @@
                     ==========================-->
 
                     <NuxtLink to="/#">Partner</NuxtLink>
+                    <NuxtLink to="/#" class="font-bold gradient-text">Hire Us</NuxtLink>
                 </nav>
-                <NuxtLink to="#" class="primary-button !h-12 hidden lg:flex items-center">Sign In</NuxtLink>
+                <NuxtLink to="#" class="primary-button !h-12 hidden lg:flex items-center">Buy Now</NuxtLink>
                 <div class=" gap-7 ">
                     
                 </div>
@@ -275,9 +276,10 @@
                         </NuxtLink>
                     </div>
                 </div>
+                <NuxtLink to="#" class="py-4 px-2 border-b border-[#E7EAEF]">Partner</NuxtLink>
                 <NuxtLink to="#" class="py-4 px-2 border-b border-[#E7EAEF]"><span class="text-primary text-base font-bold">Hire Us</span></NuxtLink>
             </nav>
-            <button class="primary-button h-12 w-full">Sign In</button>
+            <button class="primary-button h-12 w-full">Buy Now</button>
         </aside>
     <!--==========================
         SIDEBAR PART START 
@@ -400,9 +402,9 @@
             </div>
         </div>
         <div class="my-6.5 border-t border-[#FFEAF2] relative">
-            <NuxtLink to="#" class="!w-13 !px-0 rounded-full primary-button flex items-center justify-center absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2" aria-label="Back to Top">
+            <button @click="handleScrollTop()" class="!w-13 !px-0 rounded-full primary-button flex items-center justify-center absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2" aria-label="Back to Top">
                 <i class="icon-chevron-up text-3xl text-white"></i>
-            </NuxtLink>
+            </button>
         </div>
         <div class="container">
             <div class="flex items-center md:flex-row flex-col gap-y-6 md:justify-between py-8">
@@ -435,7 +437,6 @@
     const handledropdown = ($event) => {
       const targetBtn = $event.currentTarget;
       const dropdownGroup = targetBtn.closest('.dropdown-group');
-    
       document.querySelectorAll('.dropdown-group').forEach(group => {
         if (group !== dropdownGroup) {
           group.classList.remove('active');
@@ -444,6 +445,12 @@
     
       dropdownGroup.classList.toggle('active');
     };
+
+    const handleScrollTop = ()=>{
+        window.scrollTo({
+            top: 0,
+        });
+    }
 
 </script>
 

@@ -5,7 +5,7 @@
      <section class="pt-26 lg:pt-40 mb-12 sm:mb-16">
         <div class="container">
             <div class="max-w-[742px] w-full mx-auto">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">FoodKing<span class="gradient-text"> FAQs</span></h1>
+                <h1 class="heading mb-6">FoodKing<span class="gradient-text"> FAQs</span></h1>
                 <p class="text-base lg:text-lg font-normal text-center">Answers to Common Questions About FoodKing.</p>
             </div>
         </div>
@@ -21,7 +21,7 @@
         <div class="container">
             <div class="grid col-span-1 md:grid-cols-3 gap-y-12 gap-x-8 lg:place-content-between">
                 <div class="md:col-span-1">
-                    <div  class="sticky top-32 p-4 rounded-2xl bg-white shadow-[0px_6px_12px_0px_rgba(186,186,186,0.10)]">
+                    <div class="sticky top-32 p-4 rounded-2xl bg-white shadow-[0px_6px_12px_0px_rgba(186,186,186,0.10)]">
                         <nav class="flex flex-col gap-2 text-[#1A203C]">
                             <div v-for="topic in topics">
                                <button

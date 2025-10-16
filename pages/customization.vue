@@ -5,8 +5,8 @@
      <section class="pt-26 lg:pt-38 mb-20 sm:mb-40 relative">
         <div class="container">
             <div class="grid lg:grid-cols-2 gap-y-12 lg:place-content-between">
-                <div class="max-lg:max-w-2xl max-lg:text-center max-lg:mx-auto mx-auto flex flex-col">
-                    <h1 class="text-3xl lg:text-[42px] font-bold leading-tight mb-6"><span class="gradient-text">Customize Foodimaa </span>to Fit Your Business Perfectly</h1>
+                <div class="max-lg:max-w-2xl max-lg:text-center max-lg:mx-auto flex flex-col">
+                    <h1 class="text-3xl max-w-md lg:text-[42px] font-bold leading-tight mb-6"><span class="gradient-text">Customize Foodimaa </span>to Fit Your Business Perfectly</h1>
                     <p class="text-base lg:text-lg font-normal mb-6 lg:text-left text-center">As the creator of Foodimaa, no one knows the system better than we do—and that means we can customize it exactly the way you need. From design changes and new features to third-party integrations and workflow tweaks, we’ll tailor FoodKing to fit your business perfectly.</p>
                     <div class="flex flex-wrap items-center max-lg:justify-center gap-6 flex-grow-1">
                         <NuxtLink to="#" class="!px-6 primary-button flex items-center gap-3">
@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div>
-                    <NuxtImg class="max-w-[465px] w-full lg:ml-auto mx-auto lg:mx-0" src="/images/customization/banner.png"/>
+                    <NuxtImg class="max-w-[479px] w-full lg:ml-auto mx-auto lg:mx-0" src="/images/customization/banner.png"/>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
                 <p class="text-base lg:text-lg font-normal text-center">From request to delivery—here’s how we make it happen.</p>
             </div>
             <div class="grid lg:grid-cols-2 relative">
-                <span class="absolute -z-10 top-32 left-1/2 -translate-x-1/2 w-[580px] h-[75px] rotate-[35deg] blur-[300px] bg-[#FFA087]"></span>
+                <span class="blur-rect"></span>
                 <div class="flex items-center lg:justify-start justify-center">
                     <NuxtImg src="/images/customization/work-process.png" alt="process-banner" class="w-full max-w-[479px]"/>
                 </div>     

@@ -1,4 +1,3 @@
-
 <template>
 
      <!--===============================
@@ -6,9 +5,9 @@
      =================================-->
      <section class="h-auto w-full pt-26 lg:pt-40 relative">
         <div class="container">
-            <div class="text-sm sm:text-base font-medium text-primary px-4 py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3">FoodKing Demo</div>
+            <div class="title mb-3 sm:mb-5">FoodKing Demo</div>
             <div class="max-w-[742px] w-full mx-auto">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Turn Your <span class="gradient-text">Multi-Restaurant Business Vision Into Reality</span> with Foodimaa</h1>
+                <h1 class="heading mb-6">Turn Your <span class="gradient-text">Multi-Restaurant Business Vision Into Reality</span> with Foodimaa</h1>
                 <p class="text-base lg:text-lg font-normal text-center lg:px-24 mb-8 sm:mb-6">Take a tour! Try our Foodimaa demo and see how it can boost your multi-restaurant food ordering business.</p>
             </div>
         </div>
@@ -30,7 +29,7 @@
                  <p class="text-[15px] font-normal">The system refreshes every 1 hour and your all demo data will be removed. So, you may need to clear your cookies and login again using demo credentials.</p>
             </div>
             <div class="flex flex-wrap gap-6">
-                <div v-for="feature in features.filter((item)=>item.addon==false)" :id="`demo-card-${feature.id}`" class="group bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
+                <div v-for="feature in features.filter((item)=>item.addon==false)" :id="`demo-card-${feature.id}`" class="group card">
                     <div class="flex items-start justify-between">
                         <div :class="`vector-bg-${feature.id}`" class="w-9 h-9 rounded-full mb-6 flex items-center justify-center">
                             <i :class="feature.vector" class="text-xl text-white"></i>
@@ -53,38 +52,43 @@
         RESTAURANT ECOSYSTEM PART END 
      =================================-->
      
-    <!--===============================
-            ADDON DEMO PART START 
+     <!--===============================
+                FAQ PART START
      =================================-->
-     <section class="mb-20 sm:mb-40">
+     <section class="h-auto w-full pb-26 lg:pb-40 relative">
         <div class="container">
-            <div class="text-sm sm:text-base font-medium text-primary px-4 py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8] mb-3">Addons Demo</div>
-            <div class="max-w-[934px] w-full mx-auto mb-12 sm:mb-16">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Turn Up the Flavor<span class="gradient-text"> with Addons!</span></h1>
-                 <p class="text-base lg:text-lg font-normal text-center lg:px-24">Discover addons that bring flexibility, automation, and convenience — all in one seamless experience.</p>
+            <div class="max-w-[742px] w-full mx-auto mb-12">
+                <h1 class="heading mb-6">Frequently Asked<span class="gradient-text"> Questions</span></h1>
+                <p class="text-base lg:text-lg font-normal text-center lg:px-24">Take a tour! Try our Foodimaa demo and see how it can boost your multi-restaurant food ordering business.</p>
             </div>
-            <div class="grid sm:grid-cols-2 gap-6">
-                <div v-for="feature in features.filter((item)=>item.addon==true)" :id="`demo-card-${feature.id}`" class="group bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
-                    <div class="flex items-start justify-between">
-                        <div :class="`vector-bg-${feature.id}`" class="w-9 h-9 rounded-full mb-6 flex items-center justify-center">
-                            <i :class="feature.vector" class="text-xl text-white"></i>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="col-span-3 md:col-span-2">
+                    <div v-for="(faq,index) in faqs" @click="handleFaq(index)" class="group p-6 text-left w-full mb-6 cursor-pointer bg-white rounded-xl shadow-faq">
+                        <div class="flex items-center gap-3 justify-between group-hover:text-primary">
+                            <h6 class="text-lg/[23px] font-semibold ">{{ faq.qns }}</h6>
+                            <i :class="{ 'rotate-180': faqOpen[index] }" class="icon-circle-down text-xl gradient-text rotate-0 transition-all duration-300"></i>
                         </div>
-                        <div v-if="feature.addon" class="absolute right-0 shadow-badge">
-                            <div class="relative overflow-y-clip bg-linear-270 from-secondary to-primary">
-                                <div class="w-6 h-6 rotate-45 bg-primary absolute -left-3 "></div>
-                                <div class="p-1 h-6 text-sm font-semibold text-white flex items-center relative z-10">Add-On</div>
-                            </div>
+                        <div class="h-0 origin-top faq-text overflow-hidden transition-all duration-300 ease-in-out">
+                            <p class="text-base font-normal pt-6">{{ faq.ans }}</p>
                         </div>
                     </div>
-                    <h6 class="text-2xl font-bold mb-3">{{feature.name}}</h6>
-                    <p class="text-base font-normal mb-6">{{feature.desc}}</p>
-                    <button class="w-fit py-3.5 px-6 text-base border border-primary rounded-full leading-4.5 font-bold gradient-text shadow-button">Comming Soon...</button>
+                </div>
+                <div class="col-span-3 md:col-span-1 rounded-xl bg-[#FFF7F5] py-12 px-8 h-fit">
+                    <NuxtImg class="h-16 aspect-square mb-6 mx-auto" src="/images/vector/messages.png"/>
+                    <div>
+                        <p class="text-lg font-bold mb-4 text-center">You have different questions?</p>
+                        <p class="text-base font-normal mb-6 text-center">
+                            <span>Our team will answer all your questions.</span>
+                            <span>We ensure a quick response.</span>
+                        </p>
+                    </div>
+                    <NuxtLink to="" class="cursor-pointer px-8 block w-fit mx-auto h-12 leading-12 rounded-full bg-primary text-base font-bold text-white">Contact Support Team</NuxtLink>
                 </div>
             </div>
         </div>
      </section>
      <!--===============================
-             ADDON DEMO PART END 
+                FAQ PART END
      =================================-->
 
     <!--===============================
@@ -104,10 +108,9 @@
                 </svg>
                 <div class="relative">
                     <div class="flex flex-col justify-center items-center max-w-[934px] w-full mx-auto">
-                        <h2 class="text-3xl md:text-[42px] leading-tight text-center font-bold mb-6">Start Your Journey with FoodKing & Build a
-                            <span class="gradient-text">Multi-Restaurant Food Business</span>
-                            Today!
-                            </h2>
+                        <h2 class="text-3xl md:text-[42px] leading-tight text-center font-bold mb-6">Start Your Journey with Foodimaa & Build a
+                            <span class="gradient-text">Multi-Restaurant Food Business</span>Today!
+                        </h2>
                         <p class="text-base font-normal text-center mb-6">Stay ahead in the game with the best restaurant business solution.</p>
                         <div class="flex flex-wrap gap-6 items-center justify-center">
                              <button class="primary-button">Buy Now</button>
@@ -125,4 +128,19 @@
 </template>
 <script setup>
     import features from '@/assets/json/ecosystem.json'
+    let faqOpen = ref({})
+    const faqs = ref([
+        {id:1, qns: "Where can I buy FoodKing?" , ans: "For both licenses, you will get full source code. But in the extended license, you can charge a client and, you will get API documentation like Postman collection only in the extended license."},
+        {id:2, qns: "What are the difference between regular & extended license?" , ans: "For both licenses, you will get full source code. But in the extended license, you can charge a client and, you will get API documentation like Postman collection only in the extended license."},
+        {id:3, qns: "Do I need to pay monthly?" , ans: "For both licenses, you will get full source code. But in the extended license, you can charge a client and, you will get API documentation like Postman collection only in the extended license."},
+
+    ])
+    const handleFaq = (index) => {
+      faqOpen.value = { [index]: !faqOpen.value[index] };
+      const contents = document.querySelectorAll('.faq-text');
+      contents.forEach((content, i) => {
+        const isActive = i === index && faqOpen.value[index];
+        content.style.height = isActive ? `${content.scrollHeight}px` : '0px';
+      });
+    };
 </script>

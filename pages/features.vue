@@ -5,7 +5,7 @@
      <section class="h-auto w-full pt-26 lg:pt-38">
         <div class="container">
             <div class="max-w-[934px] w-full mx-auto">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Extraordinary<span class="gradient-text"> Features of FoodKing Multi-Branch </span>Restaurant Business Solution</h1>
+                <h1 class="heading mb-6">Extraordinary<span class="gradient-text"> Features of FoodKing Multi-Branch </span>Restaurant Business Solution</h1>
                 <p class="text-base lg:text-lg font-normal text-center lg:px-24 mb-8 sm:mb-6">FoodKing is packed with the tools that keep your restaurant running smooth and growing your business fast. Manage orders, deliveries, dine-in, inventory, staff, and more from one powerful system. Whether you run a small café or a multi-branch restaurant, FoodKing scales with your business.</p>
             </div>
             <div class="flex gap-5 sm:gap-6 items-center justify-center mb-12 sm:mb-16">
@@ -901,7 +901,7 @@
      <section class="bg-[url('/images/bg/addon-bg.png')] bg-contain md:bg-cover bg-no-repeat bg-top pt-20 pb-20 sm:pb-40">
         <div class="container">
             <div class="max-w-[742px] w-full mx-auto md:px-20 mb-12 lg:mb-16">
-                <h1 class="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">Boost Your System –<span class="gradient-text"> Addons Features </span>Uncovered</h1>
+                <h1 class="heading mb-6">Boost Your System –<span class="gradient-text"> Addons Features </span>Uncovered</h1>
                 <p class="text-base lg:text-lg font-normal text-center ">Packed with extra goodies to make running your restaurant smoother, faster, and way more fun!</p>
             </div>
             <div class="sticky top-20 lg:top-24 z-10">

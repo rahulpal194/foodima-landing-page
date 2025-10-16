@@ -18,7 +18,7 @@
     --shadow-blog: 0 8px 20px 0 rgba(55, 106, 139, 0.06);
     --shadow-paper: 0px 24px 60px 0px rgba(8, 80, 135, 0.12);
     --shadow-sidebar: 0px 8px 20px 0px rgba(55, 106, 139, 0.04);
-    --drop-shadow-stepvector : 0 4px 16px rgba(211, 150, 138, 0.16);
+    --drop-shadow-stepvector : 0 4px 16px rgba(107, 188, 156, 0.16);
     --drop-shadow-foodbank :2.571px 4.286px 12.857px rgba(230, 59, 95, 0.40);
     --drop-shadow-foodscan :2.143px 2.143px 8.572px rgba(50, 121, 255, 0.40); 
     --drop-shadow-foodappi :2.143px 2.143px 8.571px rgba(0, 138, 127, 0.40); 
@@ -30,15 +30,19 @@
 
 @layer base{
      html{@apply scroll-smooth sm:overflow-x-auto overflow-x-hidden}
-     body{@apply font-plus text-[#323D4E] scroll-smooth sm:overflow-x-visible overflow-x-hidden}
+     body{@apply font-plus text-[#323D4E] !scroll-smooth sm:overflow-x-visible overflow-x-hidden}
      button{@apply cursor-pointer}
     .sticky-header { @apply backdrop-blur-[100px] shadow-header bg-white/90 }
-
+    .card {@apply bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative h-full}
+    .blur-rect {@apply absolute -z-10 top-32 left-1/2 -translate-x-1/2 w-[580px] h-[75px] rotate-[35deg] blur-[300px] bg-[#FFC9C2]}
+    .heading {@apply text-3xl lg:text-[42px] font-bold text-center leading-tight}
+    .title {@apply text-sm sm:text-base font-medium text-primary px-4 py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8]}
+    
     .whatsapp-gradient{@apply bg-linear-270 from-[#2AE971] to-[#00B142] shadow-whatsapp hover:from-[#00B142] hover:to-[#2AE971] transition-all duration-300 cursor-pointer}
     .gradient-text { @apply bg-linear-to-r text-transparent bg-clip-text from-secondary to-primary}
     .hover-button { @apply !px-6 w-fit group-hover:border-none group-hover:bg-gradient-to-b group-hover:from-secondary group-hover:to-primary group-hover:text-white group-hover:shadow-gradient-button}
-    .primary-button { @apply h-13 px-8 bg-gradient-to-b from-secondary to-primary rounded-full text-white text-base font-bold shadow-gradient-button active:shadow-none transition-all duration-300}
-    .button { @apply h-13 px-8 hover:bg-gradient-to-b hover:from-secondary hover:to-primary border hover:border-none border-secondary rounded-full text-secondary hover:text-white text-base font-bold  shadow-button hover:shadow-gradient-button transition-all duration-300}
+    .primary-button { @apply h-13 px-6 sm:px-8 bg-gradient-to-b from-secondary to-primary rounded-full text-white text-base whitespace-nowrap font-bold shadow-gradient-button active:shadow-none transition-all duration-300}
+    .button { @apply h-13 px-6 sm:px-8 hover:bg-gradient-to-b hover:from-secondary hover:to-primary border hover:border-none border-secondary rounded-full text-secondary whitespace-nowrap hover:text-white text-base font-bold  shadow-button hover:shadow-gradient-button transition-all duration-300}
 
     .modal { @apply bg-black/60 backdrop-blur-sm w-full h-screen inset-0 fixed flex justify-center items-center z-30 opacity-0 invisible transition-all duration-300}
     .modal.active {@apply opacity-100 visible}
@@ -68,15 +72,10 @@
     .installation-plan.active {@apply !border-secondary bg-linear-180 from-[#FFF6F5] to-[#FFF]}
     .installation-plan.active > button {@apply !text-white !border-none !shadow-gradient-button !bg-clip-padding !bg-gradient-to-b from-secondary to-primary cursor-pointer}
 
-    #card-1 { @apply basis-[320px] grow xl:grow-0} 
-    #card-2 { @apply basis-[486px] grow xl:grow-0}   
-    #card-3 { @apply basis-[272px] grow xl:grow-0}  
-    #card-4 { @apply basis-[366px] grow xl:grow-0}   
-    #card-5 { @apply basis-[402px] grow xl:grow-0}
-    #card-6 { @apply basis-[310px] grow xl:grow-0}
-    #card-7 { @apply basis-[250px] grow xl:grow-0}
-    #card-8 { @apply basis-[332px] grow xl:grow-0}
-    #card-9 { @apply basis-[496px] grow xl:grow-0}
+    #card-1 { @apply basis-[450px] grow xl:grow-0} 
+    #card-2 { @apply basis-[652px] grow xl:grow-0}   
+    #card-3 { @apply basis-[601px] grow xl:grow-0}  
+    #card-4 { @apply basis-[501px] grow xl:grow-0}   
 
     #demo-card-1 { @apply basis-[449px] grow xl:grow-0} 
     #demo-card-2 { @apply basis-[653px] grow xl:grow-0}   
@@ -122,4 +121,13 @@
     .bg-custom-gradient {
           background: linear-gradient(95deg, #FFF5F4 0%, #FFF6EF 36.81%, #F4F8FF 72.5%, #FFF7EF 100%);
       }
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+        scroll-behavior: smooth;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
 }
