@@ -6,7 +6,7 @@
         <div class="container">
             <div class="grid lg:grid-cols-2 lg:place-content-between">
                 <div class="max-lg:max-w-2xl max-lg:text-center max-lg:mx-auto mx-auto">
-                    <h1 class="text-3xl lg:text-[42px] font-bold leading-tight mb-6">Keep Things Smooth With Our
+                    <h1 class="heading mb-6">Keep Things Smooth With Our
                         <span class="gradient-text"> iCare - Maintenance </span>
                         Service
                     </h1>
@@ -97,13 +97,6 @@
                             <tr v-for="service in services" class="border-b last:border-none border-[#E7EAEF]">
                                 <td class="p-6 pt-8 flex items-center gap-3">
                                     <p class="text-base sm:text-lg font-medium whitespace-nowrap overflow-hidden text-ellipsis max-w-60">{{ service.name }}</p>
-                                    <div class="relative w-fit group">
-                                        <i class="lab-line-info mt-0.5 cursor-pointer text-[#818B9B]"></i>
-                                        <span class=" inline-block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full z-10 w-80 px-2.5 py-2 rounded-lg text-sm shadow-md text-white bg-black transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:-translate-y-[107%]
-                                            after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:z-10 after:border-[10px] after:rotate-45 after:rounded after:border-black ">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis magni temporibus dignissimos cum sed corrupti rem? Nam non facilis repellendus ut, ipsam doloribus eligendi sunt corporis. Animi nemo amet voluptatem
-                                        </span>
-                                    </div>
                                 </td>
                                 <td class="text-center">
                                     <i v-if="typeof service.bronze === 'boolean'" class="text-xl sm:text-2xl leading-none" :class="service.bronze ? 'icon-check-circle text-[#31C970]' : 'icon-close-circle text-[#F55858]'"></i>

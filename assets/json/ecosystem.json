@@ -23,7 +23,7 @@
     {
         "id":4,
         "vector":"icon-user-site",
-        "name":"Delivery Man Panel",
+        "name":"Delivery Panel",
         "desc":"View all active deliveries, update statuses in real time, & track routes on the go.",
         "addon": false
     }
