@@ -151,9 +151,6 @@
                     <NuxtLink to="/#" class="font-bold gradient-text">Hire Us</NuxtLink>
                 </nav>
                 <NuxtLink to="#" class="primary-button !h-12 hidden lg:flex items-center">Buy Now</NuxtLink>
-                <div class=" gap-7 ">
-                    
-                </div>
                 <button @click="{isOpen=!isOpen; console.log('click')}" class="lg:hidden block rounded-2xl">
                     <i class="icon-hamburger-menu gradient-text text-2xl"></i>
                 </button>
@@ -331,7 +328,7 @@
                     <NuxtLink to="/" class="w-fit block mb-6">
                         <NuxtImg class="w-30 h-auto" src="/images/logo.png" alt="Foodima Logo" loading="lazy" />
                     </NuxtLink>
-                    <p class="text-lg font-normal mb-8">Foodimaa is a multi-restaurant food ordering and delivery solution built to connect restaurants and customers in a single platform. Purchase Foodimaa with source code and documentation.</p>
+                    <p class="text-lg font-normal mb-8">Foodpi is a multi-restaurant food ordering and delivery solution built to connect restaurants and customers in a single platform. Purchase Foodpi with source code and documentation.</p>
                     <div class="mb-8">
                         <h3 class="text-2xl font-semibold mb-4">Follow Our Socials</h3>
                         <div class="flex gap-4">

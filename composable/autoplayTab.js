@@ -8,7 +8,7 @@ export function useAutoplayTab(
     const featureIndex = ref(0);
     const featureActive = ref(1);
     const speed = 2000;
-    const delay = 1000;
+    const delay = 50000;
     const featureInterval = ref(null);
 
     const handleFeatureLoop = () => {

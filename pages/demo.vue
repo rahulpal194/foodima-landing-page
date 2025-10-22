@@ -7,8 +7,8 @@
         <div class="container">
             <div class="title mb-3 sm:mb-5">FoodKing Demo</div>
             <div class="max-w-[742px] w-full mx-auto">
-                <h1 class="heading mb-6">Turn Your <span class="gradient-text">Multi-Restaurant Business Vision Into Reality</span> with Foodimaa</h1>
-                <p class="text-base lg:text-lg font-normal text-center lg:px-24 mb-8 sm:mb-6">Take a tour! Try our Foodimaa demo and see how it can boost your multi-restaurant food ordering business.</p>
+                <h1 class="heading mb-6">Turn Your <span class="gradient-text">Multi-Restaurant Business Vision Into Reality</span> with Foodpi</h1>
+                <p class="text-base lg:text-lg font-normal text-center lg:px-24 mb-8 sm:mb-6">Take a tour! Try our Foodpi demo and see how it can boost your multi-restaurant food ordering business.</p>
             </div>
         </div>
      </section>
@@ -59,7 +59,7 @@
         <div class="container">
             <div class="max-w-[742px] w-full mx-auto mb-12">
                 <h1 class="heading mb-6">Frequently Asked<span class="gradient-text"> Questions</span></h1>
-                <p class="text-base lg:text-lg font-normal text-center lg:px-24">Take a tour! Try our Foodimaa demo and see how it can boost your multi-restaurant food ordering business.</p>
+                <p class="text-base lg:text-lg font-normal text-center lg:px-24">Take a tour! Try our Foodpi demo and see how it can boost your multi-restaurant food ordering business.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div class="col-span-3 md:col-span-2">
@@ -96,7 +96,7 @@
      =================================-->
      <ActionComponent>
         <div class="flex flex-col justify-center items-center max-w-[934px] w-full mx-auto">
-            <h2 class="heading mb-6">Start Your Journey with Foodimaa & Build a
+            <h2 class="heading mb-6">Start Your Journey with Foodpi & Build a
                 <span class="gradient-text">Multi-Restaurant Food Business</span>Today!
             </h2>
             <p class="text-base font-normal text-center mb-6">Stay ahead in the game with the best restaurant business solution.</p>
@@ -116,7 +116,7 @@
 import ActionComponent from '~/components/ActionComponent.vue';
     let faqOpen = ref({})
     const faqs = ref([
-        {id:1, qns: "Where can I buy Foodimaa?" , ans: "For both licenses, you will get full source code. But in the extended license, you can charge a client and, you will get API documentation like Postman collection only in the extended license."},
+        {id:1, qns: "Where can I buy Foodpi?" , ans: "For both licenses, you will get full source code. But in the extended license, you can charge a client and, you will get API documentation like Postman collection only in the extended license."},
         {id:2, qns: "What are the difference between regular & extended license?" , ans: "For both licenses, you will get full source code. But in the extended license, you can charge a client and, you will get API documentation like Postman collection only in the extended license."},
         {id:3, qns: "Do I need to pay monthly?" , ans: "For both licenses, you will get full source code. But in the extended license, you can charge a client and, you will get API documentation like Postman collection only in the extended license."},
 

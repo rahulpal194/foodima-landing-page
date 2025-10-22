@@ -7,7 +7,7 @@
         <div class="container">
             <div class="max-w-[790px] w-full mx-auto">
                 <h1 class="heading mb-6">Hassle-Free Setup with Our<span class="gradient-text"> Installation Packages </span></h1>
-                <p class="text-base lg:text-lg font-normal text-center lg:px-24">Purchased the latest Foodimaa on CodeCanyon? Explore our installation plans and get started fast.</p>
+                <p class="text-base lg:text-lg font-normal text-center lg:px-24">Purchased the latest Foodpi on CodeCanyon? Explore our installation plans and get started fast.</p>
             </div>
         </div>
      </section>
@@ -75,7 +75,7 @@
         <div class="flex flex-col justify-center items-center">
             <h2 class="heading mb-3">Curious to
                 <span class="gradient-text"> Discuss More </span>
-                About Foodimaa?
+                About Foodpi?
                 </h2>
             <p class="text-base font-normal text-center mb-6">Need help or customization? Talk to the experts who built it — book your session now.</p>
             <div class="flex flex-wrap items-center max-lg:justify-center gap-4">
@@ -97,7 +97,7 @@
 <script setup>
 import packages from '@/assets/json/installation-plan.json'
 const choices = ref([
-    {id:1, icon:"icon-light-creator", name:"Creator of Foodimaa", desc:"We made Foodimaa, you can count on us for a smooth, worry-free installation."},
+    {id:1, icon:"icon-light-creator", name:"Creator of Foodpi", desc:"We made Foodpi, you can count on us for a smooth, worry-free installation."},
     {id:2, icon:"icon-fill-installation", name:"Professional Installation", desc:"Our team of experts ensures the software is installed accurately and perfectly setup for publishing & running the business."},
     {id:3, icon:"icon-doc-check", name:"Compatibility Check", desc:"Before installation, we check for compatibility with your environment and make necessary adjustments."},
     {id:4, icon:"icon-fill-testing", name:"Testing & Verification", desc:"We are dedicated to delivering your project with a rigorous 100% quality assurance process by our software quality assurance team."},

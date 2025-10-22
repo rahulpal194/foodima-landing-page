@@ -6,8 +6,8 @@
         <div class="container">
             <div class="grid lg:grid-cols-2 gap-y-12 lg:place-content-between">
                 <div class="max-lg:max-w-2xl max-lg:text-center max-lg:mx-auto flex flex-col">
-                    <h1 class="heading max-w-md mb-6 text-center lg:text-left"><span class="gradient-text">Customize Foodimaa </span>to Fit Your Business Perfectly</h1>
-                    <p class="text-base lg:text-lg font-normal mb-6 lg:text-left text-center">As the creator of Foodimaa, no one knows the system better than we do—and that means we can customize it exactly the way you need. From design changes and new features to third-party integrations and workflow tweaks, we’ll tailor FoodKing to fit your business perfectly.</p>
+                    <h1 class="heading max-w-md mb-6 text-center lg:text-left"><span class="gradient-text">Customize Foodpi </span>to Fit Your Business Perfectly</h1>
+                    <p class="text-base lg:text-lg font-normal mb-6 lg:text-left text-center">As the creator of Foodpi, no one knows the system better than we do—and that means we can customize it exactly the way you need. From design changes and new features to third-party integrations and workflow tweaks, we’ll tailor FoodKing to fit your business perfectly.</p>
                     <div class="flex flex-wrap items-center max-lg:justify-center gap-6 flex-grow-1">
                         <NuxtLink to="#" class="!px-6 primary-button flex items-center gap-3">
                             <i class="icon-line-tidycal text-2xl"></i>
@@ -143,7 +143,7 @@
     <ActionComponent>
         <div class="flex flex-col justify-center items-center">
             <h2 class="heading mb-3">
-                <span class="gradient-text">Customize Foodimaa </span>
+                <span class="gradient-text">Customize Foodpi </span>
                 to Fit Your Business
                 </h2>
             <p class="text-base font-normal text-center mb-6">Need help or customization? Talk to the experts who built it — book your session now.</p>
