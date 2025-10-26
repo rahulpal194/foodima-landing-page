@@ -5,7 +5,7 @@
      =================================-->
      <section class="h-auto w-full pt-26 lg:pt-40 relative">
         <div class="container">
-            <div class="title mb-3 sm:mb-5">FoodKing Demo</div>
+            <div class="title mb-3 sm:mb-5">Foodpi Demo</div>
             <div class="max-w-[742px] w-full mx-auto">
                 <h1 class="heading mb-6">Turn Your <span class="gradient-text">Multi-Restaurant Business Vision Into Reality</span> with Foodpi</h1>
                 <p class="text-base lg:text-lg font-normal text-center lg:px-24 mb-8 sm:mb-6">Take a tour! Try our Foodpi demo and see how it can boost your multi-restaurant food ordering business.</p>
@@ -113,7 +113,7 @@
 </template>
 <script setup>
     import features from '@/assets/json/ecosystem.json'
-import ActionComponent from '~/components/ActionComponent.vue';
+    import ActionComponent from '~/components/ActionComponent.vue';
     let faqOpen = ref({})
     const faqs = ref([
         {id:1, qns: "Where can I buy Foodpi?" , ans: "For both licenses, you will get full source code. But in the extended license, you can charge a client and, you will get API documentation like Postman collection only in the extended license."},
@@ -122,11 +122,12 @@ import ActionComponent from '~/components/ActionComponent.vue';
 
     ])
     const handleFaq = (index) => {
-      faqOpen.value = { [index]: !faqOpen.value[index] };
-      const contents = document.querySelectorAll('.faq-text');
-      contents.forEach((content, i) => {
+        faqOpen.value = { [index]: !faqOpen.value[index] };
+        const contents = document.querySelectorAll('.faq-text');
+        contents.forEach((content, i) => {
         const isActive = i === index && faqOpen.value[index];
         content.style.height = isActive ? `${content.scrollHeight}px` : '0px';
       });
     };
+
 </script>

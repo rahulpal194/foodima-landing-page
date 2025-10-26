@@ -4,7 +4,7 @@
      =================================-->
      <section class="pt-26 lg:pt-40 mb-12 relative">
         <div class="container">
-            <div class="title mb-3 sm:mb-5">Foodking Demo</div>
+            <div class="title mb-3 sm:mb-5">Foodpi Demo</div>
             <div class="max-w-[790px] w-full mx-auto">
                 <h1 class="heading mb-6">No Monthly Bills—Just a<span class="gradient-text"> One-Time Purchase </span>and Full Access</h1>
                 <p class="text-base lg:text-lg font-normal text-center lg:px-24">Choose the perfect plan for your multi-branch restaurant business and get started instantly!</p>
@@ -21,8 +21,8 @@
      <section class="mb-20 sm:mb-40" id="pricing-plan">
         <div class="container">
             <div class="bg-white rounded-full shadow-pricing-title w-fit mx-auto mb-12 p-2 flex gap-6 items-center h-[60px]">
-                 <button @click="pricingPlan = 'regular'" type="button" :class="pricingPlan == 'regular' ? 'primary-button px-6 !h-11' : 'text-black ps-8'" class="toggle-btn">Regular</button>
-                 <button @click="pricingPlan = 'extended'" type="button" :class="pricingPlan == 'extended' ? 'primary-button px-6 !h-11' : 'text-black pr-8'" class="toggle-btn">Extended</button>
+                 <button @click="pricingPlan = 'regular'" type="button" :class="pricingPlan == 'regular' ? 'primary-button px-8' : 'text-black ps-6'" class="toggle-btn h-full">Regular</button>
+                 <button @click="pricingPlan = 'extended'" type="button" :class="pricingPlan == 'extended' ? 'primary-button px-8' : 'text-black pr-6'" class="toggle-btn h-full">Extended</button>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div class="col-span-3 md:col-span-1 rounded-xl bg-[#FFF7F5] p-6 flex flex-col gap-6 items-center">

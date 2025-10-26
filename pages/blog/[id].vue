@@ -22,14 +22,14 @@
             </h1>
             <NuxtImg :src="blogDetails.coverimage" alt="blog-details" class="w-full rounded-2xl mb-8 sm:mb-12" />
             <p class="mb-8">
-                The iNiLabs product FoodKing was recognized by Envato as the most popular mobile development item in 2023. This innovative restaurant food delivery system offers everything a restaurant owner needs, including an admin panel, a delivery man app, and a robust POS system. With its easy-to-use, flexible, and efficient platform, FoodKing revolutionized the food delivery industry. Official link : <NuxtLink to="#">most-popular-web-and-code-items-on-market-2023</NuxtLink>
+                The iNiLabs product Foodpi was recognized by Envato as the most popular mobile development item in 2023. This innovative restaurant food delivery system offers everything a restaurant owner needs, including an admin panel, a delivery man app, and a robust POS system. With its easy-to-use, flexible, and efficient platform, Foodpi revolutionized the food delivery industry. Official link : <NuxtLink to="#">most-popular-web-and-code-items-on-market-2023</NuxtLink>
             </p>
             <div class="mb-8">
                 <h3 class="text-2xl font-bold mb-4">
-                    What is FoodKing?
+                    What is Foodpi?
                 </h3>
                 <p>
-                    FoodKing is a restaurant food delivery system designed to meet the needs of restaurants, food delivery services, and online food orders. The system includes:
+                    Foodpi is a restaurant food delivery system designed to meet the needs of restaurants, food delivery services, and online food orders. The system includes:
                 </p>
             </div>
             <div class="mb-8">
@@ -53,15 +53,15 @@
                     Restaurant POS
                 </h3>
                 <p>
-                    FoodKing’s powerful point-of-sale (POS) system supports both in-store and delivery operations. This feature helps restaurants streamline sales processes and track transactions effortlessly. With these rich features, restaurants can streamline operations and provide exceptional customer service.
+                    Foodpi’s powerful point-of-sale (POS) system supports both in-store and delivery operations. This feature helps restaurants streamline sales processes and track transactions effortlessly. With these rich features, restaurants can streamline operations and provide exceptional customer service.
                 </p>
             </div>
             <div class="mb-8">
                 <h3 class="font-bold text-2xl mb-4">
-                    Why Did FoodKing Stand Out in 2023?
+                    Why Did Foodpi Stand Out in 2023?
                 </h3>
                 <p>
-                    Envato’s recognition of FoodKing as the most popular mobile development item in 2023 illustrates its significant impact and effectiveness. Here are some key reasons why FoodKing outshines its competition:
+                    Envato’s recognition of Foodpi as the most popular mobile development item in 2023 illustrates its significant impact and effectiveness. Here are some key reasons why Foodpi outshines its competition:
                 </p>
             </div>
             <div class="mb-8">
@@ -119,7 +119,7 @@
      <section class="mb-20 sm:mb-40">
         <div class="container">
             <div class="max-w-[742px] w-full mx-auto">
-                <h1 class="text-3xl lg:text-[42px] font-bold leading-tight mb-12 sm:mb-16 text-center">Other Popular
+                <h1 class="heading mb-12 sm:mb-16 text-center">Other Popular
                     <span class="gradient-text"> News </span>&
                     <span class="gradient-text"> Article</span>
                 </h1>

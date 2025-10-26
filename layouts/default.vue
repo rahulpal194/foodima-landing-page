@@ -298,7 +298,7 @@
                             <span class="gradient-text">Connect with Us </span>for the Latest Updates
                         </h2>
                         <p class="text-sm font-normal md:text-start text-center">
-                            We recommended you to subscribe to our newsletter for the latest updates & offers, drop your email to get daily update about FoodKing.
+                            We recommended you to subscribe to our newsletter for the latest updates & offers, drop your email to get daily update about Foodpi.
                         </p>
                     </div>
                     <div class="col-span-12 md:col-span-7">
@@ -410,7 +410,7 @@
                     <NuxtImg class="w-27 h-auto" src="/images/company-logo.png" alt="Company Logo" loading="lazy" />
                 </div>
                 <div class="flex md:flex-col lg:flex-row items-center gap-3">
-                    <p class="text-base font-normal">©2025, FoodKing. All Rights Reserved.</p>
+                    <p class="text-base font-normal">©2025, Foodpi. All Rights Reserved.</p>
                 </div>
                 <div class="flex items-center gap-3">
                     <NuxtImg class="w-8 h-auto" src="/images/payment/Secure.png" alt="Secure Payment" loading="lazy" />

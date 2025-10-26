@@ -5,8 +5,8 @@
      <section class="h-auto w-full pt-26 lg:pt-38">
         <div class="container">
             <div class="max-w-[934px] w-full mx-auto">
-                <h1 class="heading mb-6">Extraordinary<span class="gradient-text"> Features of FoodKing Multi-Branch </span>Restaurant Business Solution</h1>
-                <p class="text-base lg:text-lg font-normal text-center lg:px-24 mb-8 sm:mb-6">FoodKing is packed with the tools that keep your restaurant running smooth and growing your business fast. Manage orders, deliveries, dine-in, inventory, staff, and more from one powerful system. Whether you run a small café or a multi-branch restaurant, FoodKing scales with your business.</p>
+                <h1 class="heading mb-6">Extraordinary<span class="gradient-text"> Features of Foodpi Multi-Branch </span>Restaurant Business Solution</h1>
+                <p class="text-base lg:text-lg font-normal text-center lg:px-24 mb-8 sm:mb-6">Foodpi is packed with the tools that keep your restaurant running smooth and growing your business fast. Manage orders, deliveries, dine-in, inventory, staff, and more from one powerful system. Whether you run a small café or a multi-branch restaurant, Foodpi scales with your business.</p>
             </div>
             <div class="flex gap-5 sm:gap-6 items-center justify-center mb-12 sm:mb-16">
                 <button class="primary-button relative z-20">Buy Now</button>
@@ -140,25 +140,23 @@
                         </div>
                     </div>
                 </div>
-
-                
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
                     <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
                         <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Built-in Messaging System</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Built-in messaging system allows real-time communication between admin, managers, staffs, and customers making it easy to coordinate tasks, share updates, and resolve issues quickly without relying on external apps.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Order Refund</h3>
+                                <p class="text-base font-normal overflow-ellipsis">Process customer refunds smoothly and efficiently — track refund requests, approve payments, and maintain full transparency to ensure trust and satisfaction for both your customers and restaurants.</p>
                             </div>
-                            <NuxtImg class="h-[265px] w-full" src="/images/features/admin-panel/admin-panel-10.png" alt="admin"/>
+                            <NuxtImg class="h-[265px] w-full" src="/images/features/admin-panel/admin-panel-11.png" alt="admin"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6 h-full">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Offer & Promotion</h3>
-                                <p class="text-base font-normal">In the Promotion section, the admin can create coupons and offers with customizable options like discount type, minimum and maximum purchase amounts, and expiry date. These promos appear on the customer website and can be used for discounted food purchases.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Reviews & Ratings</h3>
+                                <p class="text-base font-normal">Manage and monitor customer reviews & ratings for restaurants and delivery men — respond, track ratings, and ensure feedback helps improve service and build trust.</p>
                             </div>
-                            <NuxtImg class="h-[241px] w-full" src="/images/features/admin-panel/admin-panel-11-1.png" alt="pos"/>
+                            <NuxtImg class="h-[241px] w-full" src="/images/features/admin-panel/admin-panel-12.png" alt="pos"/>
                         </div>
                     </div>
                 </div>
@@ -166,19 +164,19 @@
                     <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div class="sm:py-8 ps-8 flex-shrink">
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Employees & User Management</h3>
-                                <p class="text-base font-normal">We offer user management system lets the admin easily manage users & their  roles like branch managers, staff, delivery boys, customers, waiters, and chefs—each with specific permissions to ensure smooth and secure operations.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">User & Restaurant Management</h3>
+                                <p class="text-base font-normal">We offer user management system lets the admin easily manage users and restaurants from one place — add or edit accounts, monitor activity, and keep your platform organized and running smoothly.</p>
                             </div>
-                            <NuxtImg class="w-[368px] h-[286px]" src="/images/features/admin-panel/admin-panel-12.png" alt="addon"/>
+                            <NuxtImg class="w-[368px] h-[286px]" src="/images/features/admin-panel/admin-panel-13.png" alt="addon"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4 ">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Report & Analytics</h3>
-                                <p class="text-base font-normal">We offers smart reports and analytics, including sales, items, and credit balance, helping admins track performance.</p>
+                                <h3 class="text-2xl font-bold mb-4">Reports</h3>
+                                <p class="text-base font-normal">Access detailed reports on credit balance & collection — gain insights to make informed business decisions.</p>
                             </div>
-                            <NuxtImg class="max-w-[324px] h-[184px] w-full" src="/images/features/admin-panel/admin-panel-13.png" alt="qr_code"/>
+                            <NuxtImg class="max-w-[324px] h-[184px] w-full" src="/images/features/admin-panel/admin-panel-14.png" alt="qr_code"/>
                         </div>
                     </div>
                 </div>
@@ -187,9 +185,9 @@
                         <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div>
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Company & Business Settings</h3>
-                                <p class="text-base font-normal">Company & Site Settings allow the admin to configure essential details like business name, logo, contact info, tax settings, currency, google map and more. This ensures the platform aligns with the brand identity and operates according to business needs.</p>
+                                <p class="text-base font-normal">Company & Site Settings allow the admin to configure essential details like business name, logo, contact info, tax settings, currency, google map and more. Set up and customize your business preferences — manage currency, taxes, time zones, and other essential settings effortlessly.</p>
                             </div>
-                            <NuxtImg class="max-w-[599px] w-full h-[286px]" src="/images/features/admin-panel/admin-panel-13.png" alt="addon"/>
+                            <NuxtImg class="max-w-[599px] w-full h-[286px]" src="/images/features/admin-panel/admin-panel-15.png" alt="addon"/>
                         </div>
                     </div>
                 </div>
@@ -197,19 +195,19 @@
                     <div class="col-span-12 lg:col-span-8 pt-8 ps-8 feature-card">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Multi Branch Setup</h3>
-                                <p class="text-base font-normal">Multi-branch setup lets the admin manage multiple restaurant locations from a single system. Each branch can have its own staff, orders, and settings, while the admin maintains full control and oversight across all branches.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Front Web Setup</h3>
+                                <p class="text-base font-normal">Customize your website’s front view with ease — manage banners, sections, and content to match your brand perfectly.</p>
                             </div>
-                            <NuxtImg class="max-w-[368px] w-full h-[286px]" src="/images/features/admin-panel/admin-panel-14.png" alt="addon"/>
+                            <NuxtImg class="max-w-[368px] w-full h-[286px]" src="/images/features/admin-panel/admin-panel-16.png" alt="addon"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4 ">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Branch-wise Delivery Zone</h3>
-                                <p class="text-base font-normal">Each branch can set its own delivery area, ensuring faster, more efficient delivery service for customers.</p>
+                                <h3 class="text-2xl font-bold mb-4">Subscribed Emails</h3>
+                                <p class="text-base font-normal">Manage all subscribed customer — perfect for sending updates, offers, & newsletters to keep your audience engaged.</p>
                             </div>
-                            <NuxtImg class=" h-[184px] w-full" src="/images/features/admin-panel/admin-panel-15.png" alt="qr_code"/>
+                            <NuxtImg class=" h-[184px] w-full" src="/images/features/admin-panel/admin-panel-17.png" alt="qr_code"/>
                         </div>
                     </div>
                 </div>
@@ -217,19 +215,19 @@
                     <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
                         <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Restaurant Availability Time Slot</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Lets admins set specific operating hours for each branch. This helps control when customers can place orders, ensuring orders are only accepted during active business hours.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Delivery & Rider Tips Setup</h3>
+                                <p class="text-base font-normal overflow-ellipsis">Set up and manage delivery and rider tip options — let customers reward great service while keeping payouts transparent and organized.</p>
                             </div>
-                            <NuxtImg class="h-[265px] w-full" src="/images/features/admin-panel/admin-panel-16.png" alt="admin"/>
+                            <NuxtImg class="h-[265px] w-full" src="/images/features/admin-panel/admin-panel-18.png" alt="admin"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6 h-full">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Order & Delivery Charge Setup</h3>
-                                <p class="text-base font-normal">Order & Delivery Charge Setup allows admins to define minimum order amounts and set flexible delivery fees based on distance, zone, or fixed rates. This ensures fair pricing while optimizing delivery operations.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Cuisine Setup</h3>
+                                <p class="text-base font-normal">Add and manage cuisines easily — categorize restaurants and dishes to help customers find their favorite food faster.</p>
                             </div>
-                            <NuxtImg class="h-[241px] w-full" src="/images/features/admin-panel/admin-panel-17.png" alt="pos"/>
+                            <NuxtImg class="h-[241px] w-full" src="/images/features/admin-panel/admin-panel-19.png" alt="pos"/>
                         </div>
                     </div>
                 </div>
@@ -237,19 +235,19 @@
                     <div class="col-span-12 lg:col-span-4   px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4 ">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Push Notification Setup</h3>
-                                <p class="text-base font-normal">Push Notification Setup enables real-time updates to customers, delivery boys, and staff, improving communication and overall user experience.</p>
+                                <h3 class="text-2xl font-bold mb-4">Push Notification, Mail, and SMS  Setup</h3>
+                                <p class="text-base font-normal">Set up push notifications, emails, & SMS alerts — keep customers, restaurants, and delivery teams instantly informed.</p>
                             </div>
-                            <NuxtImg class="max-w-[324px] h-[160px] w-full" src="/images/features/admin-panel/admin-panel-18.png" alt="qr_code"/>
+                            <NuxtImg class="max-w-[324px] h-[160px] w-full" src="/images/features/admin-panel/admin-panel-19.png" alt="qr_code"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-8   pt-8 ps-8 feature-card">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Bulk Import and Export</h3>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Role & Permission</h3>
                                 <p class="text-base font-normal">Bulk Import & Export feature allows admins to quickly upload or download item data in bulk, making it easy to manage large menus efficiently and save time on manual entry.</p>
                             </div>
-                            <NuxtImg class="max-w-[368px] w-full h-[286px]" src="/images/features/admin-panel/admin-panel-19.png" alt="addon"/>
+                            <NuxtImg class="max-w-[368px] w-full h-[286px]" src="/images/features/admin-panel/admin-panel-20.png" alt="addon"/>
                         </div>
                     </div>
                 </div>
@@ -258,18 +256,38 @@
                         <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
                             <div>
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Multi Payment Setup</h3>
-                                <p class="text-base font-normal overflow-ellipsis">It supports various payment methods, including cash, card, and credit wallets. Admins can enable or disable options for all branch, offering customers convenient payment choices.</p>
+                                <p class="text-base font-normal overflow-ellipsis">Enable multiple payment methods — from cash to digital wallets and gateways, giving customers a seamless and flexible checkout experience.</p>
                             </div>
-                            <NuxtImg class="h-[289px] w-full" src="/images/features/admin-panel/admin-panel-20.png" alt="admin"/>
+                            <NuxtImg class="h-[289px] w-full" src="/images/features/admin-panel/admin-panel-22.png" alt="admin"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
                         <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
                             <div>
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Multi Language Setup</h3>
-                                <p class="text-base font-normal">It allows the platform to support multiple languages, making it accessible to a wider audience. Admins can add, edit, and manage languages to provide a localized experience.</p>
+                                <p class="text-base font-normal">Add and manage multiple languages — let customers, restaurants, and delivery teams use the platform in their preferred language for a smoother experience.</p>
                             </div>
-                            <NuxtImg class="h-[289px] w-full" src="/images/features/admin-panel/admin-panel-21.png" alt="pos"/>
+                            <NuxtImg class="h-[289px] w-full" src="/images/features/admin-panel/admin-panel-23.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
+                        <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Multi Pages Setup</h3>
+                                <p class="text-base font-normal overflow-ellipsis">Create and manage essential pages like Terms & Conditions, Privacy Policy, Contact Us, About Us, etc. — keeping your platform complete and compliant.</p>
+                            </div>
+                            <NuxtImg class="h-[289px] w-full" src="/images/features/admin-panel/admin-panel-24.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">PWA Setup</h3>
+                                <p class="text-base font-normal">Add and manage multiple languages — let customers, restaurants, and delivery teams use the platform in their preferred language for a smoother experience.</p>
+                            </div>
+                            <NuxtImg class="h-[289px] w-full" src="/images/features/admin-panel/admin-panel-25.png" alt="pos"/>
                         </div>
                     </div>
                 </div>
@@ -279,88 +297,48 @@
                     <div class="col-span-12 lg:col-span-6 pt-8 px-8  feature-card">
                         <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Branch Manager Dashboard</h3>
-                                <p class="text-base font-normal overflow-ellipsis">The dashboard shows real-data where the branch manager can see business analytics, order statistics, sales summary, orders summary, most popular items and so on.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Restaurant Panel Dashboard</h3>
+                                <p class="text-base font-normal overflow-ellipsis">Give restaurant owners full control with a smart dashboard — manage menus, track orders, monitor earnings, and keep daily operations running smoothly.</p>
                             </div>
-                            <NuxtImg class="h-[286px] w-full" src="/images/features/branch-staff/branch-staff-1.png" alt="admin"/>
+                            <NuxtImg class="h-[286px] w-full" src="/images/features/restaurant-panel/restaurant-panel-1.png" alt="admin"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-6 px-8 pt-8  feature-card">
                         <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Chef/Kitchen Dashboard</h3>
-                                <p class="text-base font-normal">The dashboard shows real-data where the chef can see business analytics, order statistics, sales summary, orders summary, most popular items and so on of his branch.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Items Management</h3>
+                                <p class="text-base font-normal">Add, edit, and organize food items with items extras and addons easily — manage categories, prices, and availability to keep your menu up to date.</p>
                             </div>
-                            <NuxtImg class="h-[286px] w-full" src="/images/features/branch-staff/branch-staff-2.png" alt="pos"/>
+                            <NuxtImg class="h-[286px] w-full" src="/images/features/restaurant-panel/restaurant-panel-2.png" alt="pos"/>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-8 pt-8 px-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden">
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">POS Operator Dashboard</h3>
-                                <p class="text-base font-normal">The dashboard shows real-data where the POS operator can see business analytics, order statistics, sales summary, orders summary, most popular items and so on.</p>
+                                <h3 class="text-2xl font-bold mb-4">Item’s Extras</h3>
+                                <p class="text-base font-normal">Add & manage item extras like toppings or anything like that to give customers a fully customizable ordering experience.</p>
                             </div>
-                            <NuxtImg class="max-w-[388px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/branch-staff/branch-staff-3.png" alt="addon"/>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-3.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Item’s Addons</h3>
+                                <p class="text-base font-normal">Create and manage item addons to offer extra options, enhance customer choices, and boost order value.</p>
+                            </div>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-4.png" alt="qr_code"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
                         <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">Point of Sale (POS)</h3>
-                                <p class="text-base font-normal">Admin can create dine-in, takeaway, delivery order from POS & choose payment option also.</p>
+                                <p class="text-base font-normal">Process orders quickly and efficiently with offers, token, & multiple payment option from Point of Sale (POS).</p>
                             </div>
-                            <NuxtImg class="h-[205px] w-full" src="/images/features/branch-staff/branch-staff-4.png" alt="qr_code"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-12 lg:grid-rows-2 lg:grid-flow-col gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-8 lg:row-span-1 pt-8 ps-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Online Orders Manage</h3>
-                                <p class="text-base font-normal">A well-organized online order list allows the admin to quickly locate orders by their current status. Easily view and manage individual orders, including customer details, order summary, status, payment info, delivery progress, and more.</p>
-                            </div>
-                            <NuxtImg class="max-w-[318px] w-full h-[226px] flex-grow flex-shrink-0" src="/images/features/branch-staff/branch-staff-5.png" alt="addon"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-8 lg:row-span-1 pt-8 ps-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Table Orders Manage</h3>
-                                <p class="text-base font-normal">A well-organized table order list allows the admin to quickly locate orders by their current status. Easily view and manage individual orders, including customer details, order summary, status, payment info, delivery progress, and more.</p>
-                            </div>
-                            <NuxtImg class="max-w-[338px] w-full h-[226px] flex-grow flex-shrink-0" src="/images/features/branch-staff/branch-staff-6.png" alt="addon"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-4 lg:row-span-2 px-6 pt-6 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
-                            <div>
-                                <h3 class="text-2xl font-bold mb-4">POS Order Manage</h3>
-                                <p class="text-base font-normal">A well-organized POS order list allows the admin to quickly locate orders by their current status. Easily view and manage individual orders, including customer details, order summary, status, delivery progress, and more.</p>
-                            </div>
-                            <NuxtImg class="h-[366px] w-full" src="/images/features/branch-staff/branch-staff-7.png" alt="qr_code"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
-                            <div>
-                                <h3 class="text-2xl font-bold mb-4">Order Status Screen (OSS)</h3>
-                                <p class="text-base font-normal">Customers can see their order’s current progress in real-time by the token number in OSS Monitor from the table.</p>
-                            </div>
-                            <NuxtImg class="h-[184px] w-full" src="/images/features/branch-staff/branch-staff-8.png" alt="qr_code"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-8 pt-8 px-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Kitchen Display System (KDS)</h3>
-                                <p class="text-base font-normal">KDS is helps streamline kitchen workflow by showing real-time orders on-screen. Orders update live by status, making it easy for staff to manage and serve efficiently.</p>
-                            </div>
-                            <NuxtImg class="max-w-[368px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/branch-staff/branch-staff-9.png" alt="addon"/>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-5.png" alt="qr_code"/>
                         </div>
                     </div>
                 </div>
@@ -368,39 +346,146 @@
                     <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
                         <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Built-in Messaging System</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Built-in messaging system allows real-time communication between admin, managers, staffs, and customers making it easy to coordinate tasks, share updates, and resolve issues quickly without relying on external apps.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">POS Orders Manage</h3>
+                                <p class="text-base font-normal overflow-ellipsis">A well-organized POS order list allows to quickly locate orders by their current status. Easily view and manage individual orders, including customer details, order summary, status, and more.</p>
                             </div>
-                            <NuxtImg class="h-[265px] w-full" src="/images/features/branch-staff/branch-staff-10.png" alt="admin"/>
+                            <NuxtImg class="h-[265px] w-full" src="/images/features/restaurant-panel/restaurant-panel-6.png" alt="admin"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
                         <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Delivery Zone</h3>
-                                <p class="text-base font-normal">Each branch has its own delivery area which is configure by system admin to ensuring faster, more efficient delivery service for customers.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Online Orders Manage</h3>
+                                <p class="text-base font-normal">A well-organized online order list allows to quickly locate orders by their current status. Easily view and manage individual orders, including customer details, order summary, status, & more.</p>
                             </div>
-                            <NuxtImg class="h-[286px] w-full" src="/images/features/branch-staff/branch-staff-11.png" alt="pos"/>
+                            <NuxtImg class="h-[286px] w-full" src="/images/features/restaurant-panel/restaurant-panel-7.png" alt="pos"/>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-8 pt-8 px-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden">
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Employees & Staff Management</h3>
-                                <p class="text-base font-normal">We offer staff & user management system lets the branch manger easily manage staff & their  roles like delivery boys, customers, waiters, and chefs—each with specific permissions to ensure smooth and secure operations.</p>
+                                <h3 class="text-2xl font-bold mb-4">Coupon Setup</h3>
+                                <p class="text-base font-normal">Add & manage item extras like toppings or anything like that to give customers a fully customizable ordering experience.</p>
                             </div>
-                            <NuxtImg class="max-w-[368px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/branch-staff/branch-staff-12.png" alt="addon"/>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-8.png" alt="qr_code"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
                         <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Report & Analytics</h3>
-                                <p class="text-base font-normal">We offers smart reports and analytics, including sales, items, and credit balance, helping admins track performance.</p>
+                                <h3 class="text-2xl font-bold mb-4">Campaigns Manage</h3>
+                                <p class="text-base font-normal">Create and manage item addons to offer extra options, enhance customer choices, and boost order value.</p>
                             </div>
-                            <NuxtImg class="h-[185px] w-full" src="/images/features/branch-staff/branch-staff-13.png" alt="qr_code"/>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-9.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Offers Manage</h3>
+                                <p class="text-base font-normal">Process orders quickly and efficiently with offers, token, & multiple payment option from Point of Sale (POS).</p>
+                            </div>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-10.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Ratings & Reviews</h3>
+                                <p class="text-base font-normal">View and manage customer ratings and reviews — understand feedback and improve your food quality.</p>
+                            </div>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-11.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Payouts</h3>
+                                <p class="text-base font-normal">Receive payouts directly from the admin — track your restaurant’s earnings and payouts with full transparency.</p>
+                            </div>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-12.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Reports</h3>
+                                <p class="text-base font-normal">Access detailed reports on sales, and items — analyze performance and make decisions to grow your restaurant.</p>
+                            </div>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-13.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-8 pt-8 pl-8 feature-card">
+                        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Restaurant Setting</h3>
+                                <p class="text-base font-normal">Easily manage your restaurant details, location, cuisine, logo & cover image, and more — customize everything to fit your business perfectly.</p>
+                            </div>
+                            <NuxtImg class="max-w-[368px] w-full h-[226px] flex-grow flex-shrink-0" src="/images/features/restaurant-panel/restaurant-panel-14.png" alt="addon"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6 h-full">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Order Setup</h3>
+                                <p class="text-base font-normal">Configure how orders work — set timings, delivery, takeaway, order limits and more preferences.</p>
+                            </div>
+                            <NuxtImg class="h-[124px] w-full" src="/images/features/restaurant-panel/restaurant-panel-15.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
+                        <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Restaurant Time Slots</h3>
+                                <p class="text-base font-normal overflow-ellipsis">Set flexible opening and closing time slots for restaurants — control when orders can be placed and ensure smooth scheduling.</p>
+                            </div>
+                            <NuxtImg class="h-[265px] w-full" src="/images/features/restaurant-panel/restaurant-panel-16.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Item Categories</h3>
+                                <p class="text-base font-normal">Create and manage item categories to keep menus organized — help customers browse and find their favorite dishes easily.</p>
+                            </div>
+                            <NuxtImg class="h-[286px] w-full" src="/images/features/restaurant-panel/restaurant-panel-17.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Item Attributes</h3>
+                                <p class="text-base font-normal">Add and manage item attributes like size, flavor, or spice level — give customers more choices and ordering experience.</p>
+                            </div>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-18.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Restaurant Status</h3>
+                                <p class="text-base font-normal">Easily control your restaurant’s online or offline status — manage availability in real time to accept orders when you’re ready.</p>
+                            </div>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-19.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Taxes</h3>
+                                <p class="text-base font-normal">Set up and manage taxes effortlessly — apply custom tax rates to orders and keep your billing accurate and compliant.</p>
+                            </div>
+                            <NuxtImg class="h-[205px] w-full" src="/images/features/restaurant-panel/restaurant-panel-20.png" alt="qr_code"/>
                         </div>
                     </div>
                 </div>
@@ -411,7 +496,7 @@
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div class="sm:py-8 ps-8 flex-shrink">
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Responsive User Website</h3>
-                                <p class="text-base font-normal overflow-ellipsis">FoodKing’s user website works seamlessly on all devices, making it easy for customers to browse, order, and track—anytime, anywhere.</p>
+                                <p class="text-base font-normal overflow-ellipsis">Foodpi’s user website works seamlessly on all devices, making it easy for customers to browse, order, and track—anytime, anywhere.</p>
                             </div>
                             <NuxtImg class="w-[414px] h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-1.png" alt="admin"/>
                         </div>
@@ -431,7 +516,7 @@
                         <div class="flex flex-col justify-between items-center gap-4">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">Cookie Banner</h3>
-                                <p class="text-base font-normal">FoodKing includes a built-in cookie banner to help you stay transparent and compliant—inform users and gain consent with ease.</p>
+                                <p class="text-base font-normal">Foodpi includes a built-in cookie banner to help you stay transparent and compliant—inform users and gain consent with ease.</p>
                             </div>
                             <NuxtImg class="max-w-[388px] h-[168px] w-full" src="/images/features/user-site/user-site-3.png" alt="qr_code"/>
                         </div>
@@ -551,7 +636,7 @@
                         <div class="flex flex-col items-center gap-6 overflow-hidden">
                             <div>
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Multi Payment Option</h3>
-                                <p class="text-base font-normal overflow-ellipsis">FoodKing supports multiple payment methods—including cash, card, and credit balance—giving customers the flexibility to pay however they prefer.</p>
+                                <p class="text-base font-normal overflow-ellipsis">Foodpi supports multiple payment methods—including cash, card, and credit balance—giving customers the flexibility to pay however they prefer.</p>
                             </div>
                             <NuxtImg class="h-[289px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-15.png" alt="admin"/>
                         </div>
@@ -580,7 +665,7 @@
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">Multi Language</h3>
-                                <p class="text-base font-normal">FoodKing supports multiple languages for a more personalized and accessible user experience.</p>
+                                <p class="text-base font-normal">Foodpi supports multiple languages for a more personalized and accessible user experience.</p>
                             </div>
                             <NuxtImg class=" h-[185px] w-full" src="/images/features/user-site/user-site-18.png" alt="pos"/>
                         </div>
@@ -773,7 +858,7 @@
                         <div class="flex flex-col md:flex-row lg:flex-col justify-between items-center gap-4 h-full">
                             <div class="flex-1">
                                 <h3 class="text-2xl font-bold mb-4">Multi Payment Option</h3>
-                                <p class="text-base font-normal">FoodKing supports multiple payment methods—including cash, card, and credit balance—giving customers the flexibility to pay however they prefer.</p>
+                                <p class="text-base font-normal">Foodpi supports multiple payment methods—including cash, card, and credit balance—giving customers the flexibility to pay however they prefer.</p>
                             </div>
                             <NuxtImg class="h-[271px]" src="/images/features/user-app/user-app-12.png" alt="pos"/>
                         </div>
@@ -813,7 +898,7 @@
                         <div class="flex flex-col md:flex-row lg:flex-col items-center gap-4 overflow-hidden">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">Multi Language</h3>
-                                <p class="text-base font-normal">FoodKing supports multiple languages for a more personalized and accessible user experience.</p>
+                                <p class="text-base font-normal">Foodpi supports multiple languages for a more personalized and accessible user experience.</p>
                             </div>
                             <NuxtImg class="h-[184px] flex-grow flex-shrink-0" src="/images/features/user-app/user-app-16.png" alt="addon"/>
                         </div>
@@ -884,7 +969,7 @@
                         <div class="flex flex-col md:flex-row lg:flex-col items-center gap-4 overflow-hidden">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">Multi Language</h3>
-                                <p class="text-base font-normal">FoodKing supports multiple languages for a more personalized and accessible user experience.</p>
+                                <p class="text-base font-normal">Foodpi supports multiple languages for a more personalized and accessible user experience.</p>
                             </div>
                             <NuxtImg class="h-[184px] flex-grow flex-shrink-0" src="/images/features/delivery-app/delivery-app-6.png" alt="addon"/>
                         </div>

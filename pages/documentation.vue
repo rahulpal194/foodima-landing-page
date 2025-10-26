@@ -6,7 +6,7 @@
         <div class="container">
             <div class="max-w-[790px] w-full mx-auto">
                 <h1 class="heading mb-6">Foodpi<span class="gradient-text"> Documentation</span></h1>
-                <p class="text-base lg:text-lg font-normal text-center">Everything you need to set up, manage, and master FoodKing.</p>
+                <p class="text-base lg:text-lg font-normal text-center">Everything you need to set up, manage, and master Foodpi.</p>
             </div>
         </div>
      </section>
@@ -64,7 +64,7 @@
             <div v-if="activetab=='Getting Started'">
                 <h2 class="text-[28px] font-bold mb-4">Getting started</h2>
                 <div class="border-t border-primary pt-6">
-                    <p class="text-2xl font-medium mb-8">FoodKing - Restaurant Food Delivery System with Admin Panel & Delivery Man App | Restaurant POS</p>
+                    <p class="text-2xl font-medium mb-8">Foodpi - Restaurant Food Delivery System with Admin Panel & Delivery Man App | Restaurant POS</p>
                     <ul class="grid grid-cols-2 gap-y-6 mb-8 sm:mb-12">
                         <li class="text-base font-bold">Version: <span class="font-medium">3.2</span></li>
                         <li class="text-base font-bold">Created: <span class="font-medium">1 June, 2023</span></li>
@@ -79,7 +79,7 @@
             <div v-if="activetab=='Prerequisite' && activeContent=='Basic Knowledge'">
                 <h2 class="text-[28px] font-bold mb-4">Basic Knowledge</h2>
                 <div class="border-t border-primary pt-6">
-                    <p class="text-2xl font-medium mb-8">To install, set up, and publish FoodKing with your branding, it's necessary to possess fundamental knowledge in both server-side and mobile app development since the system comprises multiple features for web and mobile applications.</p>
+                    <p class="text-2xl font-medium mb-8">To install, set up, and publish Foodpi with your branding, it's necessary to possess fundamental knowledge in both server-side and mobile app development since the system comprises multiple features for web and mobile applications.</p>
                     <ul class="mb-8 list-disc ps-5">
                         <li>IDE for Mobile and Web development, we preferred Android Studio and VSCode.</li>
                         <li>Flutter SDK and JDK with path setup in your IDE.</li>
