@@ -492,202 +492,82 @@
             </div>
             <div v-if="featureActive == 3" class="mb-12 md:mb-16">
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
-                            <div class="sm:py-8 ps-8 flex-shrink">
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Responsive User Website</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Foodpi’s user website works seamlessly on all devices, making it easy for customers to browse, order, and track—anytime, anywhere.</p>
-                            </div>
-                            <NuxtImg class="w-[414px] h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-1.png" alt="admin"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                    <div class="col-span-12 lg:col-span-6 px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Web Banners</h3>
-                                <p class="text-base font-normal">Highlight offers, promotions, or important updates with top banners on user website—grab attention & drive engagement.</p>
+                                <h3 class="text-2xl font-bold mb-4">Delivery Man Dashboard</h3>
+                                <p class="text-base font-normal">A smart dashboard for delivery personnel to track assigned orders, update delivery statuses, and manage their daily tasks with ease.</p>
                             </div>
-                            <NuxtImg class="max-w-[324px] h-[185px] w-full" src="/images/features/user-site/user-site-2.png" alt="pos"/>
+                            <NuxtImg class="max-w-[470px] h-[289px] w-full" src="/images/features/delivery-panel/deliveryman-panel-1.png" alt="pos"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 px-6 pt-6 feature-card">
+                        <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Ratings & Reviews</h3>
+                                <p class="text-base font-normal">View customer ratings and feedback on completed deliveries — help to maintain service quality and build a trusted delivery experience.</p>
+                            </div>
+                            <NuxtImg class="max-w-[470px] h-[289px] w-full" src="/images/features/delivery-panel/deliveryman-panel-2.png" alt="pos"/>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-6 mb-6">
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-4">
-                            <div>
-                                <h3 class="text-2xl font-bold mb-4">Cookie Banner</h3>
-                                <p class="text-base font-normal">Foodpi includes a built-in cookie banner to help you stay transparent and compliant—inform users and gain consent with ease.</p>
-                            </div>
-                            <NuxtImg class="max-w-[388px] h-[168px] w-full" src="/images/features/user-site/user-site-3.png" alt="qr_code"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
-                            <div class="sm:py-8 ps-8 flex-shrink">
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Featured & Most Popular Items</h3>
-                                <p class="text-base font-normal">Showcase popular & featured items to boost visibility and drive more orders—automatically or manually highlight what’s hot on your menu.</p>
-                            </div>
-                            <NuxtImg class="max-w-[388px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-4.png" alt="addon"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
-                        <div class="flex flex-col items-center gap-6 overflow-hidden">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Item or Dish Search</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Help customers find their favorite dishes fast with a smart search bar—quick, accurate results make ordering easier and faster.</p>
-                            </div>
-                            <NuxtImg class="h-[295px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-5.png" alt="admin"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-6">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Menu Category</h3>
-                                <p class="text-base font-normal">Organize your dishes into clear, user-friendly categories, making it easy for customers to browse and find what they’re craving.</p>
-                            </div>
-                            <NuxtImg class="h-[295px] w-full" src="/images/features/user-site/user-site-6.png" alt="pos"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Veg/Non-veg Filter</h3>
-                                <p class="text-base font-normal">Let customers quickly filter dishes by veg or non-veg—ensuring a personalized and hassle-free browsing experience.</p>
+                                <h3 class="text-2xl font-bold mb-4">Available Orders</h3>
+                                <p class="text-base font-normal">Check all available delivery orders in real time — accept tasks instantly and keep deliveries running without delay.</p>
                             </div>
-                            <NuxtImg class=" h-[185px] w-full" src="/images/features/user-site/user-site-7.png" alt="pos"/>
+                            <NuxtImg class="max-w-[324px] h-[184px] w-full" src="/images/features/delivery-panel/deliveryman-panel-3.png" alt="qr_code"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div class="sm:py-8 ps-8 flex-shrink">
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Item Details & Add to Cart</h3>
-                                <p class="text-base font-normal overflow-ellipsis">A quick view modal of each items that showing item details with sizes, extras, addons, and a field for special instructions. Customers can add to cart any item from here.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Active Orders</h3>
+                                <p class="text-base font-normal">View and manage all your accepted orders — track delivery progress, update statuses, and ensure every order reaches the customer on time.</p>
                             </div>
-                            <NuxtImg class="w-[368px] h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-8.png" alt="admin"/>
+                            <NuxtImg class="max-w-[368px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/delivery-panel/deliveryman-panel-4.png" alt="addon"/>
                         </div>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
-                        <div class="flex flex-col items-center gap-6 overflow-hidden">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">User’s Cart</h3>
-                                <p class="text-base font-normal overflow-ellipsis">The user cart page offers a clear summary of selected items, allowing customers to review quantities, customize extras, and proceed to checkout with ease.</p>
-                            </div>
-                            <NuxtImg class="h-[295px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-9.png" alt="admin"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-6">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Checkout</h3>
-                                <p class="text-base font-normal">The checkout page is fast, simple, and user-friendly—letting customers confirm their order, add delivery address, choose delivery time schedule or choose branch & time schedule for takeaway and place their order with confidence.</p>
-                            </div>
-                            <NuxtImg class="h-[265px] w-full" src="/images/features/user-site/user-site-10.png" alt="pos"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-12 gap-6 mb-6">
+                <div class="grid grid-cols-12 gap-6 mb-6">
                     <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div class="sm:py-8 ps-8 flex-shrink">
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Set Delivery Location</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Customers can easily set their delivery location or edit existing location on the map or by address—ensuring accurate, timely deliveries every time.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Payouts</h3>
+                                <p class="text-base font-normal">Track your completed deliveries and earnings — manage payout requests and stay updated on your payment history with ease.</p>
                             </div>
-                            <NuxtImg class="w-[368px] h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-11.png" alt="admin"/>
+                            <NuxtImg class="max-w-[388px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/delivery-panel/deliveryman-panel-5.png" alt="addon"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Branch Selection</h3>
-                                <p class="text-base font-normal">For delivery, the nearest branch is auto-selected based on customer’s location. For takeaway, customers can pick their preferred branch manually.</p>
+                                <h3 class="text-2xl font-bold mb-4">Collections</h3>
+                                <p class="text-base font-normal">View all collected cash from deliveries — keep records clear and submit collections to the admin accurately.</p>
                             </div>
-                            <NuxtImg class=" h-[160px] w-full" src="/images/features/user-site/user-site-12.png" alt="pos"/>
+                            <NuxtImg class="max-w-[324px] h-[168px] w-full" src="/images/features/delivery-panel/deliveryman-panel-6.png" alt="qr_code"/>
                         </div>
                     </div>
                 </div>
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                    <div class="col-span-12 lg:col-span-6 px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Coupon or Voucher</h3>
-                                <p class="text-base font-normal">Customers can discover all available coupons & vouchers and can apply them at checkout for instant savings.</p>
+                                <h3 class="text-2xl font-bold mb-4">Messaging</h3>
+                                <p class="text-base font-normal">The Messaging feature keeps delivery personnel connected at all times. Communicates easily with customers directly from the dashboard to ensure smooth coordination and timely deliveries.</p>
                             </div>
-                            <NuxtImg class=" h-[185px] w-full" src="/images/features/user-site/user-site-13.png" alt="pos"/>
+                            <NuxtImg class=" h-[289px] w-full" src="/images/features/delivery-panel/deliveryman-panel-7.png" alt="pos"/>
                         </div>
                     </div>
-                    <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
-                            <div class="sm:py-8 ps-8 flex-shrink">
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Schedule Delivery</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Customers can schedule their delivery by selecting a preferred date and time—making it easy to plan meals in advance and receive orders at their convenience.</p>
-                            </div>
-                            <NuxtImg class="max-w-[368px] h-[286px] w-full" src="/images/features/user-site/user-site-14.png" alt="admin"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
-                        <div class="flex flex-col items-center gap-6 overflow-hidden">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Multi Payment Option</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Foodpi supports multiple payment methods—including cash, card, and credit balance—giving customers the flexibility to pay however they prefer.</p>
-                            </div>
-                            <NuxtImg class="h-[289px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-15.png" alt="admin"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-6">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Order Tracking</h3>
-                                <p class="text-base font-normal">Customers can track their order status in real time—from confirmation to preparation and delivery—ensuring transparency and peace of mind.</p>
-                            </div>
-                            <NuxtImg class="h-[289px] w-full" src="/images/features/user-site/user-site-16.png" alt="pos"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
-                            <div class="sm:py-8 ps-8 flex-shrink">
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Orders History</h3>
-                                <p class="text-base font-normal overflow-ellipsis">The Order History feature lets customers view all their past orders & current orders in one place. They can easily review order details and track spending with just a few clicks.</p>
-                            </div>
-                            <NuxtImg class="max-w-[368px] h-[286px] w-full" src="/images/features/user-site/user-site-17.png" alt="admin"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                    <div class="col-span-12 lg:col-span-6 px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Multi Language</h3>
-                                <p class="text-base font-normal">Foodpi supports multiple languages for a more personalized and accessible user experience.</p>
+                                <h3 class="text-2xl font-bold mb-4">Location Setup</h3>
+                                <p class="text-base font-normal">Set and manage your live location directly from the dashboard — receive delivery requests from nearby restaurants and ensure faster, more efficient order handling.</p>
                             </div>
-                            <NuxtImg class=" h-[185px] w-full" src="/images/features/user-site/user-site-18.png" alt="pos"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
-                        <div class="flex flex-col items-center gap-6 overflow-hidden">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Built-in Messaging System</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Built-in messaging system allows real-time communication between customers and branch manager making it easy to  resolve issues quickly without any hassle.</p>
-                            </div>
-                            <NuxtImg class="h-[289px]" src="/images/features/user-site/user-site-19.png" alt="admin"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-6">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Authentication & Guest Login</h3>
-                                <p class="text-base font-normal">Customers can sign up or log in easily to manage their orders, or simply continue as a guest for a quick and hassle-free checkout experience.</p>
-                            </div>
-                            <NuxtImg class="h-[289px] w-full" src="/images/features/user-site/user-site-20.png" alt="pos"/>
+                            <NuxtImg class=" h-[289px] w-full" src="/images/features/delivery-panel/deliveryman-panel-8.png" alt="pos"/>
                         </div>
                     </div>
                 </div>

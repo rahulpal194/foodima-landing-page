@@ -10,7 +10,7 @@
                     <p class="text-base lg:text-lg font-normal mb-8 text-center lg:text-left">Run your food business from a responsive website with PWA for app-like speed and experience—no app store needed. Fully customizable, ready-to-use, and packed with tools for orders, deliveries, payouts, POS, vendor management, and more.</p>
                     <div class="flex flex-wrap items-center justify-center lg:justify-start gap-y-3 gap-6">
                         <button class="primary-button">Buy Now</button>
-                        <button class="button">Explore Demo</button> 
+                        <NuxtLink to="/demo" class="button w-fit flex items-center justify-center">Explore Demo</NuxtLink> 
                     </div>
                 </div>
                 <div class="w-full basis-1/2 relative">
@@ -197,42 +197,42 @@
             </div>
             <div v-if="autoplaytab.featureActive.value == 3" class="mb-12 md:mb-16">
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
-                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
-                            <div class="sm:py-8 ps-8 flex-shrink">
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Responsive User Website</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Foodpi’s user website works seamlessly on all devices, making it easy for customers to browse, order, and track—anytime, anywhere.</p>
-                            </div>
-                            <NuxtImg class="w-[414px] h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-1.png" alt="admin"/>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                    <div class="col-span-12 lg:col-span-6 px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Web Banners</h3>
-                                <p class="text-base font-normal">Highlight offers, promotions, or important updates with top banners on user website—grab attention & drive engagement.</p>
+                                <h3 class="text-2xl font-bold mb-4">Delivery Man Dashboard</h3>
+                                <p class="text-base font-normal">A smart dashboard for delivery personnel to track assigned orders, update delivery statuses, and manage their daily tasks with ease.</p>
                             </div>
-                            <NuxtImg class="max-w-[324px] h-[185px] w-full" src="/images/features/user-site/user-site-2.png" alt="pos"/>
+                            <NuxtImg class="max-w-[470px] h-[289px] w-full" src="/images/features/delivery-panel/deliveryman-panel-1.png" alt="pos"/>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 px-6 pt-6 feature-card">
+                        <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">Ratings & Reviews</h3>
+                                <p class="text-base font-normal">View customer ratings and feedback on completed deliveries — help to maintain service quality and build a trusted delivery experience.</p>
+                            </div>
+                            <NuxtImg class="max-w-[470px] h-[289px] w-full" src="/images/features/delivery-panel/deliveryman-panel-2.png" alt="pos"/>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-6 mb-6">
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
-                        <div class="flex flex-col justify-between items-center gap-4">
+                        <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Cookie Banner</h3>
-                                <p class="text-base font-normal">Foodpi includes a built-in cookie banner to help you stay transparent and compliant—inform users and gain consent with ease.</p>
+                                <h3 class="text-2xl font-bold mb-4">Available Orders</h3>
+                                <p class="text-base font-normal">Check all available delivery orders in real time — accept tasks instantly and keep deliveries running without delay.</p>
                             </div>
-                            <NuxtImg class="max-w-[388px] h-[168px] w-full" src="/images/features/user-site/user-site-3.png" alt="qr_code"/>
+                            <NuxtImg class="max-w-[324px] h-[184px] w-full" src="/images/features/delivery-panel/deliveryman-panel-3.png" alt="qr_code"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div class="sm:py-8 ps-8 flex-shrink">
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Featured & Most Popular Items</h3>
-                                <p class="text-base font-normal">Showcase popular & featured items to boost visibility and drive more orders—automatically or manually highlight what’s hot on your menu.</p>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Active Orders</h3>
+                                <p class="text-base font-normal">View and manage all your accepted orders — track delivery progress, update statuses, and ensure every order reaches the customer on time.</p>
                             </div>
-                            <NuxtImg class="max-w-[388px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-4.png" alt="addon"/>
+                            <NuxtImg class="max-w-[368px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/delivery-panel/deliveryman-panel-4.png" alt="addon"/>
                         </div>
                     </div>
                 </div>
@@ -288,7 +288,7 @@
                     </div>
                 </div>
             </div>
-            <button class="primary-button block mx-auto">Explore All Features</button>
+            <NuxtLink to="/features" class="primary-button mx-auto w-fit flex items-center justify-center">Explore All Features</NuxtLink>
         </div>
     </section>
      <!--===============================
@@ -518,7 +518,7 @@
                             <h6 class="text-2xl font-bold mb-3">Documentation</h6>
                             <p class="text-base font-normal">Dive into our complete documentation to discover how to install, configure, and run Foodpi with ease—no guesswork, just clear instructions.</p>
                         </div>
-                        <button class="button hover-button !h-12">Read Documentation</button>
+                        <NuxtLink to="/documentation" class="button hover-button !h-12 w-fit flex items-center justify-center">Read Documentation</NuxtLink>
                     </div>
                 </div>
             </div>
@@ -532,7 +532,7 @@
                             <h6 class="text-2xl font-bold mb-3">Frequently Asked Questions (FAQs)</h6>
                             <p class="text-base font-normal">Got questions? We’ve compiled answers to the most frequently asked queries to help you get started.</p>
                         </div>
-                        <button class="button hover-button !h-12">View FAQs</button>
+                        <NuxtLink to="/faq" class="button hover-button !h-12 w-fit flex items-center justify-center">View FAQs</NuxtLink>
                     </div>
                 </div>
                 <div class="col-span-12 md:col-span-6 lg:col-span-4">
@@ -594,7 +594,7 @@
             <p class="text-base font-normal text-center mb-6">Stay ahead in the game with the best restaurant business solution.</p>
             <div class="flex flex-wrap gap-6 items-center justify-center">
                  <button class="primary-button">Buy Now</button>
-                 <button class="button">Explore Demo</button>
+                 <Nuxtlink to="/demo" class="button w-fit flex justify-center items-center">Explore Demo</Nuxtlink>
             </div>
         </div>
     </ActionComponent>
