@@ -336,7 +336,7 @@
                               <NuxtImg class="w-8 h-8 rounded-full shadow-social-link" src="/images/social/Facebook.png" alt="Facebook" loading="lazy" />
                             </NuxtLink>
                             <NuxtLink to="/" aria-label="Twitter">
-                              <NuxtImg class="w-8 h-8 rounded-full shadow-social-link" src="/images/social/twitter.png" alt="Twitter" loading="lazy" />
+                              <NuxtImg class="w-8 h-8 rounded-full shadow-social-link" src="/images/social/Twitter.png" alt="Twitter" loading="lazy" />
                             </NuxtLink>
                             <NuxtLink to="/" aria-label="LinkedIn">
                               <NuxtImg class="w-8 h-8 rounded-full shadow-social-link" src="/images/social/Linkedin.png" alt="LinkedIn" loading="lazy" />
