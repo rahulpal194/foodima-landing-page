@@ -238,52 +238,52 @@
                 </div>
             </div>
             <div v-if="autoplaytab.featureActive.value == 4" class="mb-12 md:mb-16">
-                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-6 pt-8 px-8 feature-card">
-                        <div class="flex flex-col md:flex-row lg:flex-col items-center gap-6 overflow-hidden">
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Scan QR for Menu</h3>
-                                <p class="text-base font-normal overflow-ellipsis">Customers can quickly access the full menu by scanning a QR code from table—making ordering easy, contactless, and convenient.</p>
+                <div class="grid grid-cols-12 gap-6 mb-6">
+                    <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
+                        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                            <div class="sm:py-8 ps-8 flex-shrink">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Responsive PWA User Website</h3>
+                                <p class="text-base font-normal">Experience fast, app-like performance on any device — Foodpi’s responsive PWA website lets users browse, order, and track food seamlessly without any installation.</p>
                             </div>
-                            <NuxtImg class="h-[271px] flex-grow flex-shrink-0" src="/images/features/qr-code/qr-code-1.png" alt="admin"/>
+                            <NuxtImg class="max-w-[368px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/user-panel/user-panel-1.png" alt="addon"/>
                         </div>
                     </div>
-                    <div class="col-span-12 lg:col-span-6 px-8 pt-8 feature-card">
-                        <div class="flex flex-col md:flex-row lg:flex-col justify-between items-center gap-6">
+                    <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
+                        <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
-                                <h3 class="text-2xl md:text-3xl font-bold mb-4">Cart & Checkout</h3>
-                                <p class="text-base font-normal">Allowing customers to review their selected items, adjust quantities, choose payment option, and complete their order quickly and securely.</p>
+                                <h3 class="text-2xl font-bold mb-4">Cuisine Category</h3>
+                                <p class="text-base font-normal">Browse restaurants and dishes by cuisine — making it easy for customers to find their favorite food in just a few clicks.</p>
                             </div>
-                            <NuxtImg class="h-[271px] w-full" src="/images/features/qr-code/qr-code-2.png" alt="pos"/>
+                            <NuxtImg class="max-w-[324px] h-[184px] w-full" src="/images/features/user-panel/user-panel-2.png" alt="qr_code"/>
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-12 gap-6">
+                <div class="grid grid-cols-12 gap-6 mb-6">
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
                         <div class="flex flex-col md:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Item Details</h3>
-                                <p class="text-base font-normal">A quick view modal of each items that showing item details with sizes, extras, addons, and quantity.</p>
+                                <h3 class="text-2xl font-bold mb-4">Location Setup</h3>
+                                <p class="text-base font-normal">Set your delivery location instantly to discover nearby restaurants and get faster, more accurate deliveries.</p>
                             </div>
-                            <NuxtImg class="h-[184px]" src="/images/features/qr-code/qr-code-3.png" alt="qr_code"/>
+                            <NuxtImg class="h-[184px]" src="/images/features/user-panel/user-panel-3.png" alt="user-panel"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
                         <div class="flex flex-col md:flex-row lg:flex-col items-center gap-4 overflow-hidden">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Veg/Non-veg Filter</h3>
-                                <p class="text-base font-normal">Let customers quickly filter dishes by veg or non-veg—ensuring a personalized and hassle-free browsing experience.</p>
+                                <h3 class="text-2xl font-bold mb-4">Search Food/Restaurant</h3>
+                                <p class="text-base font-normal">Quickly find item or restaurants — search by name, cuisine, or category for a seamless ordering experience.</p>
                             </div>
-                            <NuxtImg class="h-[184px] flex-grow flex-shrink-0" src="/images/features/qr-code/qr-code-4.png" alt="addon"/>
+                            <NuxtImg class="h-[184px] flex-grow flex-shrink-0" src="/images/features/user-panel/user-panel-4.png" alt="user-panel"/>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-4 px-6 pt-6 feature-card">
                         <div class="flex flex-col md:flex-row lg:flex-col items-center gap-4 overflow-hidden">
                             <div>
-                                <h3 class="text-2xl font-bold mb-4">Order Tracking</h3>
-                                <p class="text-base font-normal">Customers can track their order—from confirmation to prepared and delivery—ensuring transparency & peace of mind.</p>
+                                <h3 class="text-2xl font-bold mb-4">Delivery/Takeaway</h3>
+                                <p class="text-base font-normal">Easily filter restaurants by delivery or takeaway — choose the option that suits your schedule and preference.</p>
                             </div>
-                            <NuxtImg class="h-[184px] flex-grow flex-shrink-0" src="/images/features/qr-code/qr-code-5.png" alt="order_tracking"/>
+                            <NuxtImg class="h-[184px] flex-grow flex-shrink-0" src="/images/features/user-panel/user-panel-5.png" alt="user-panel"/>
                         </div>
                     </div>
                 </div>
