@@ -6,7 +6,7 @@
         <div class="container">
             <div class="grid lg:grid-cols-2 lg:place-content-between">
                 <div class="max-lg:max-w-2xl max-lg:text-center max-lg:mx-auto mx-auto">
-                    <h1 class="heading mb-6">Keep Things Smooth With Our
+                    <h1 class="heading mb-6 lg:text-left">Keep Things Smooth With Our
                         <span class="gradient-text"> iCare - Maintenance </span>
                         Service
                     </h1>
@@ -63,8 +63,8 @@
                 </div>
             </div>
             <div class="relative">
-                <div class="overflow-x-auto overflow-y-hidden shadow-card rounded-3xl bg-white">
-                    <span class="blur-rect"></span>
+                <div class="overflow-x-auto overflow-y-hidden shadow-pricing-title rounded-3xl bg-white">
+                    <span class="blur-rect !top-0"></span>
                     <table class="w-full">
                         <thead class="border-b border-[#E7EAEF]">
                             <tr>

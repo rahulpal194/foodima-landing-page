@@ -29,7 +29,7 @@
                         <button 
                             type="button" 
                             v-for="featureTab in featureTabs"
-                            @click="featureActive = featureTab.id"
+                            @click="handleTab(featureTab.id)"
                             :key="featureTab.id"
                             :class="featureTab.id === featureActive ? 'active' : ''"
                             class="navbtn !px-6">
@@ -41,7 +41,7 @@
                     <div class="blur-rect"></div>
                 </div>
             </div>
-            <div v-if="featureActive == 1" class="mb-12 md:mb-16">
+            <div v-if="featureActive == 1" class="tab-content mb-12 md:mb-16">
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
                     <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
@@ -292,7 +292,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="featureActive == 2" class="mb-12 md:mb-16">
+            <div v-if="featureActive == 2" class="tab-content mb-12 md:mb-16">
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
                     <div class="col-span-12 lg:col-span-6 pt-8 px-8  feature-card">
                         <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
@@ -490,7 +490,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="featureActive == 3" class="mb-12 md:mb-16">
+            <div v-if="featureActive == 3" class="tab-content mb-12 md:mb-16">
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
                     <div class="col-span-12 lg:col-span-6 px-6 pt-6 feature-card">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
@@ -572,7 +572,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="featureActive == 4" class="mb-12 md:mb-16">
+            <div v-if="featureActive == 4" class="tab-content mb-12 md:mb-16">
                 <div class="grid grid-cols-12 gap-6 mb-6">
                     <div class="col-span-12 lg:col-span-8 pt-8 feature-card">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
@@ -884,6 +884,13 @@
 </template>
 <script setup>
     const featureActive = ref(1);
+    const handleTab = (id) =>{
+        featureActive.value = id
+        const content = document.querySelector('.tab-content');
+        if(content){
+            content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
     const featureTabs = reactive([
         { id: 1, name: 'Admin Panel', icon:"icon-admin-panel" },
         { id: 2, name: 'Restaurant Owner Panel', icon:"icon-branch-panel" },

@@ -65,14 +65,14 @@
                                     Documentation
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/blog" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <!-- <NuxtLink to="/blog" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
                                 <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-orange bg-gradient-to-l from-[#B077FF] to-[#7918FF]">
                                     <i class="icon-document-text text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                                 </span>
                                 <span class="text-base font-semibold whitespace-nowrap">
                                     Blogs
                                 </span>
-                            </NuxtLink>
+                            </NuxtLink> -->
                             <NuxtLink to="#" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
                                 <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#FFB973] to-[#DD5C00]">
                                     <i class="icon-video-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
@@ -207,12 +207,12 @@
                                 <i class="icon-clipboard-text text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                             </span>
                             <span class="text-base font-medium">Documentation</span></NuxtLink>
-                        <NuxtLink to="/blog" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                        <!-- <NuxtLink to="/blog" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
                             <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#B077FF] to-[#7918FF] flex justify-center items-center">
                                 <i class="icon-document-text text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                             </span>
                             <span class="text-base font-medium">Blogs</span>
-                        </NuxtLink>
+                        </NuxtLink> -->
                         <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
                             <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#FFB973] to-[#DD5C00] flex justify-center items-center">
                                 <i class="icon-video-play text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>

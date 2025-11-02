@@ -82,7 +82,7 @@
                             <span>We ensure a quick response.</span>
                         </p>
                     </div>
-                    <NuxtLink to="" class="cursor-pointer px-8 block w-fit mx-auto h-12 leading-12 rounded-full bg-primary text-base font-bold text-white">Contact Support Team</NuxtLink>
+                    <NuxtLink to="https://inilabsn.freshdesk.com/" class="px-8 block w-fit mx-auto h-12 leading-12 rounded-full bg-primary text-base font-bold text-white">Contact Support Team</NuxtLink>
                 </div>
             </div>
         </div>

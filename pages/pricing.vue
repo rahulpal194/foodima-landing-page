@@ -19,7 +19,7 @@
           PRICING PLAN PART START
      =================================-->
      <section class="mb-20 sm:mb-40" id="pricing-plan">
-        <div class="container">
+        <div class="container !max-w-[934px]">
             <div class="bg-white rounded-full shadow-pricing-title w-fit mx-auto mb-12 p-2 flex gap-6 items-center h-[60px]">
                  <button @click="pricingPlan = 'regular'" type="button" :class="pricingPlan == 'regular' ? 'primary-button px-8' : 'text-black ps-6'" class="toggle-btn h-full">Regular</button>
                  <button @click="pricingPlan = 'extended'" type="button" :class="pricingPlan == 'extended' ? 'primary-button px-8' : 'text-black pr-6'" class="toggle-btn h-full">Extended</button>
@@ -31,7 +31,7 @@
                         <p class="text-base font-semibold text-center">For Personal Project</p>
                     </div>
                     <h6 class="text-[42px] font-bold">$69</h6>
-                    <button class="primary-button">Contact Support Team</button>
+                    <NuxtLink to="#" class="primary-button flex items-center md:w-full justify-center">Buy Now</NuxtLink>
                 </div>
                 <div class="col-span-3 md:col-span-2 rounded-2xl border border-[#FFD8D3] p-6 flex flex-col">
                     <p class="text-lg font-normal flex-1 mb-8 sm:mb-12">Get started with the Regular License & power your business with premium features and lifetime updates.</p>
@@ -76,8 +76,8 @@
                 <p class="text-base lg:text-lg font-normal text-center lg:px-24">Get the right license for your goals and deliver a stronger, more valuable experience to your customers.</p>
             </div>
             <div class="relative">
-                <div class="bg-white shadow-[0px_6px_12px_0px_rgba(156,174,186,0.10)] rounded-3xl overflow-x-auto overflow-y-hidden">
-                    <span class="blur-rect"></span>
+                <div class="bg-white shadow-pricing-title rounded-3xl overflow-x-auto overflow-y-hidden">
+                    <span class="blur-rect !top-0"></span>
                 <table class="w-full">
                     <thead class="border-b last:border-none border-[#E7EAEF]">
                         <tr class="[&_th]:first:text-left align-bottom ">

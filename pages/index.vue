@@ -472,7 +472,7 @@
             <div class="p-8 md:p-12 md:pb-0 rounded-2xl bg-custom-gradient">
                 <div class="grid grid-cols-12 md:gap-14">
                     <div class="col-span-12 md:col-span-5 flex flex-col justify-center">
-                        <h2 class="heading mb-6">Foodpi Built with<span class="gradient-text"> Powerful </span>&<span class="gradient-text">  Modern </span>Technology</h2>
+                        <h2 class="heading md:text-start text-center mb-6">Foodpi Built with<span class="gradient-text"> Powerful </span>&<span class="gradient-text">  Modern </span>Technology</h2>
                         <p class="text-base font-normal mb-6">Foodpi is built using modern, secure, and scalable technologies to ensure top-tier performance and reliability.</p>
                     </div>
                     <div class="col-span-12 md:col-span-7">
@@ -557,7 +557,7 @@
     <!--===============================
               BLOG PART START 
      =================================-->
-     <section class="container">
+     <!-- <section class="container">
         <div class="mb-20 sm:mb-40 relative">
             <span class="blur-rect !top-20"></span>
             <div class="max-w-[934px] w-full mx-auto flex flex-col items-center justify-center mb-8 sm:mb-12 md:mb-16">
@@ -578,7 +578,7 @@
                 <NuxtLink to="/blog" class="primary-button inline-flex items-center">View All Blogs & Articles</NuxtLink>
             </div>
         </div>   
-     </section>
+     </section> -->
      <!--===============================
             BLOG PART END 
      =================================-->
